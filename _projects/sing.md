@@ -1,14 +1,12 @@
 ---
 layout: page
 permalink: /project/sing/
-title: Singing from a Linguistics Perspective
-description: This project includes two major themes, segment proportion and beat alignment, in Mandarin and English.
+title: Singing
+description: Singing from a Linguistics Perspective -- segment proportion; beat alignment
 img: assets/img/sing_robot.png
 importance: 1
 category: current
 related_publications: zhang2021synchronising, zhang2020segment-sing
-
-
 ---
 
 ## Background
