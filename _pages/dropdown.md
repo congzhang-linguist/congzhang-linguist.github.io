@@ -1,9 +1,9 @@
 ---
 layout: page
 title: research
-nav: true
+nav: false
 nav_order: 2
-dropdown: true
+dropdown: false
 children: 
     - title: publications
       permalink: /publications/
