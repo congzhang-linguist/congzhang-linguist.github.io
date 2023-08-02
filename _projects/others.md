@@ -2,9 +2,9 @@
 layout: page
 permalink: /project/other_past_project/
 title: Others
-description: This page is under construction
-img: assets/img/past.jpg
-importance: 2
+description: Other past projects <br><br><br><br>
+img: assets/img/project/past.jpg
+importance: 5
 category: past
 ---
 

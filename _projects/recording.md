@@ -2,9 +2,9 @@
 layout: page
 permalink: /project/recording/
 title: Recording
-description: Remote recording methods comparison
-img: assets/img/recording.png
-importance: 2
+description: Remote recording methods comparison <br><br><br>
+img: assets/img/project/recording.png
+importance: 1
 category: past
 related_publications: zhang2021comparing
 ---

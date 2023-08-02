@@ -2,9 +2,9 @@
 layout: page
 permalink: /project/fluency/
 title: Fluency
-description: L2 Mandarin Fluency
-img: assets/img/fluency.jpg
-importance: 2
+description: L2 Mandarin Fluency <br><br><br><br>
+img: assets/img/project/fluency.jpg
+importance: 4
 category: past
 related_publications: wright2015disfluency, wright2014fluency
 ---

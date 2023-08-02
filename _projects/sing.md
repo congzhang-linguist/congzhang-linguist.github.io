@@ -2,8 +2,8 @@
 layout: page
 permalink: /project/sing/
 title: Singing
-description: Singing from a Linguistics Perspective -- segment proportion; beat alignment
-img: assets/img/sing_robot.png
+description: Singing from a Linguistics Perspective -- segment proportion; beat alignment <br><br>
+img: assets/img/project/sing_robot.png
 importance: 1
 category: current
 related_publications: zhang2021synchronising, zhang2020segment-sing

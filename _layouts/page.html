@@ -12,13 +12,36 @@ layout: default
           <article>
             {{ content }}
           </article>
-
+            
+        <!-- papers -->
           {%- if page.related_publications != null and page.related_publications.size > 0 -%}
           {% assign publications = page.related_publications | replace: ", ", "," | split: "," | join: "|" %}
-          <h2>Related output:</h2>
+          <h2>Related articles:</h2>
           <div class="publications">
-            {% bibliography -f {{ site.scholar.bibliography }} -q @*[key^={{ publications }}]* %}
+            {% bibliography -f papers -q @*[key^={{ publications }}]* %}
+              {% bibliography -f preprints -q @*[key^={{ publications }}]* %}
+              
           </div>
           {%- endif %}
+            
+        <!-- talks -->
+          {%- if page.related_talks != null and page.related_talks.size > 0 -%}
+          {% assign publications = page.related_talks | replace: ", ", "," | split: "," | join: "|" %}
+          <h2>Related talks:</h2>
+          <div class="publications">
+            {% bibliography -f invited -q @*[key^={{ publications }}]* %}
+            {% bibliography -f talks -q @*[key^={{ publications }}]* %}
+          </div>
+          {%- endif %}
+        
+        <!-- resources -->
+          {%- if page.related_resources != null and page.related_resources.size > 0 -%}
+          {% assign publications = page.related_resources | replace: ", ", "," | split: "," | join: "|" %}
+          <h2>Related resources:</h2>
+          <div class="publications">
+            {% bibliography -f resources -q @*[key^={{ publications }}]* %}
+          </div>
+          {%- endif %}
+            
 
         </div>

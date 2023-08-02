@@ -2,8 +2,8 @@
 layout: page
 permalink: /project/charsiu/
 title: Charsiu
-description: Charsiu forced aligner & automatic speech recognition tool
-img: assets/img/aligner.jpeg
+description: Charsiu forced aligner & automatic speech recognition tool <br><br>
+img: assets/img/project/charsiu.png
 importance: 1
 category: current
 related_publications: zhu2022phone-charsiu

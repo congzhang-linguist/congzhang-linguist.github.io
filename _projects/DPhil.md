@@ -2,9 +2,9 @@
 layout: page
 permalink: /project/dphil/
 title: DPhil
-description: Tianjin Mandarin Tones and Tunes
-img: assets/img/dphil.png
-importance: 2
+description: Tianjin Mandarin Tones and Tunes<br><br><br>
+img: assets/img/project/dphil.png
+importance: 1
 category: past
 related_publications: zhang2018dphil, zhang2019stacking, zhang2018chanted,
 ---

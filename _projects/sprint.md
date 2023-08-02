@@ -3,8 +3,8 @@ layout: page
 permalink: /project/sprint/
 title: Postdoc
 description: Speech Prosody in Interaction - The form and function of intonation in human communication
-img: assets/img/sprint.png
-importance: 2
+img: assets/img/project/sprint.png
+importance: 1
 category: past
 related_publications: gryllia2022many-shape, arvaniti2022distangling, zhang2021comparing
 ---

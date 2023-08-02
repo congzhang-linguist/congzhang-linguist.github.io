@@ -2,8 +2,8 @@
 layout: page
 permalink: /project/featureTTS/
 title: featureTTS
-description: Applying phonological features to Text-to-Speech
-img: assets/img/tts.png
+description: Applying phonological features to Text-to-Speech <br><br><br>
+img: assets/img/project/featureTTS.png
 importance: 1
 category: current
 related_publications: 
