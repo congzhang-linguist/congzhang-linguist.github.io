@@ -2,7 +2,7 @@
 layout: page
 permalink: /project/charsiuG2P/
 title: CharsiuG2P
-description: Charsiu forced aligner & automatic speech recognition tool
+description: Grapheme-to-phoneme conversion tool in 100 languages
 img: assets/img/g2p.png
 importance: 1
 category: current

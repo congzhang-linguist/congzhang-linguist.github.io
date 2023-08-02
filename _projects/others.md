@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /project/other_past_project/
-title: others
+title: Others
 description: This page is under construction
 img: assets/img/past.jpg
 importance: 2
