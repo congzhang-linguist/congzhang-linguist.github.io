@@ -3,7 +3,7 @@ layout: page
 permalink: /project/redundancy/
 title: Redundancy
 description: Language redundancy vs prosodic information <br><br>
-img: assets/img/project/redundancy.png
+img: assets/img/project/redundancy.jpeg
 importance: 1
 category: current
 related_publications: zhang2023language-redundancy
