@@ -2,7 +2,7 @@
 layout: page
 permalink: /project/redundancy/
 title: Redundancy
-description: Language redundancy vs prosodic information <br><br>
+description: Language redundancy vs prosodic information <br><br><br>
 img: assets/img/project/redundancy.jpeg
 importance: 1
 category: current
