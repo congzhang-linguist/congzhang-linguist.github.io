@@ -177,7 +177,11 @@
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
           {%- endif %}
             {%- if entry.presentation %}
-            <a href="{{ entry.presentation }}" class="btn btn-sm z-depth-0" role="button">Presentation</a>
+              {% if entry.presentation contains '://' -%}
+              <a href="{{ entry.presentation }}" class="btn btn-sm z-depth-0" role="button">Presentation</a>
+              {%- else -%}
+              <a href="{{ entry.presentation | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Presentation</a>
+            {%- endif %}
           {%- endif %}
           </div>
 
