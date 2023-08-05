@@ -20,7 +20,7 @@ social: true  # includes social icons at the bottom of the page
 cv: true
 ---
 
-Hi! I’m Cong Zhang ([tsʰʊŋ tʃɑŋ], each with a high-level tone (tone number 55, [more about my name]). I am a Lecturer in Phonetics and Phonology at the [School of Education, Communication and Language Sciences](http://ncl.ac.uk/ecls/), Newcastle University, UK.
+Hi! I’m Cong Zhang ([tsʰʊŋ tʃɑŋ], each with a high-level tone (tone number 55, [more about my name](https://congzhang-linguist.github.io/blog/2023/my-name/)). I am a Lecturer in Phonetics and Phonology at the [School of Education, Communication and Language Sciences](http://ncl.ac.uk/ecls/), Newcastle University, UK.
 
 My research mainly focuses on aspects of speech prosody (e.g. intonation, lexical tone, rhythm), using a variety of approaches including:
 
