@@ -5,7 +5,7 @@ title: Redundancy
 description: Language redundancy vs prosodic information <br><br><br>
 img: assets/img/project/redundancy.jpg
 importance: 1
-category: current
+category: prosody
 related_publications: zhang2023language-redundancy
 related_talks: zhang2023language-redundancy-c
 related_resources: 

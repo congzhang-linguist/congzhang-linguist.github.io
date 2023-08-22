@@ -5,7 +5,7 @@ title: Gamification
 description: Making data collection more fun<br><br><br><br>
 img: assets/img/project/game.jpg
 importance: 1
-category: current
+category: facilitating research
 related_publications: kim2023collecting
 ---
 

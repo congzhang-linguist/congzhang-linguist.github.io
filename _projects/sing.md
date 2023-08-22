@@ -5,7 +5,8 @@ title: Singing
 description: Singing from a Linguistics Perspective -- segment proportion; beat alignment <br><br>
 img: assets/img/project/sing_robot.png
 importance: 1
-category: current
+category: speech technology
+related_talks: zhang2021synchronising-c, zhang2020where-c, zhang2020segment-c
 related_publications: zhang2021synchronising, zhang2020segment-sing
 ---
 

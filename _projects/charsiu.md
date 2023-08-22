@@ -5,9 +5,9 @@ title: Charsiu
 description: Charsiu forced aligner & automatic speech recognition tool <br><br>
 img: assets/img/project/charsiu.png
 importance: 1
-category: current
+category: speech technology
 related_publications: zhu2022phone-charsiu
-related_talks:
+related_talks: zhu2022phone-c
 related_resources: zhu2022phone-charsiu, zhu2022aligned-en, zhu2022aligned-cn
 ---
 

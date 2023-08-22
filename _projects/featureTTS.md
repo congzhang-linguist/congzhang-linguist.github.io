@@ -5,9 +5,9 @@ title: featureTTS
 description: Applying phonological features to Text-to-Speech <br><br><br>
 img: assets/img/project/featureTTS.png
 importance: 1
-category: current
+category: speech technology
 related_publications: zhang2021applying
-related_talks:
+related_talks: zhang2022featurally-c
 related_resources: zhang2021TTS
 ---
 

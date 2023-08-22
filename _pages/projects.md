@@ -2,14 +2,21 @@
 layout: page
 title: projects
 permalink: /projects/
-description: This page is under construction
+description: A selection of my research projects
 nav: true
 nav_order: 3
-display_categories: [current, past]
+display_categories: [prosody, speech technology, facilitating research, others]
 horizontal: false
 ---
 
 <!-- pages/projects.md -->
+
+At the moment, there are three major themes of my research:   
+(1) **speech prosody**: tone, intonation, tone-intonation interaction, syntax-prosody interface, intonation phonology of English, rhythm, etc.;   
+(2) **speech technology**: TTS, ASR;   
+(3) **facilitating research**: by providing concepts, methods, and tools to enpower fellow researchers.   
+I am also sometimes involved in L2 research.  
+
 <div class="projects">
 {%- if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->

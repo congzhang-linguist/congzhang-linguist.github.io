@@ -5,9 +5,9 @@ title: CharsiuG2P
 description: Grapheme-to-phoneme conversion tool in 100 languages <br><br>
 img: assets/img/project/charsiuG2P.png
 importance: 1
-category: current
+category: speech technology
 related_publications: zhu2022byt5-g2p
-related_talks:
+related_talks: zhu2022byt5-g2p-c
 related_resources: zhu2022charsiug2p, zhu2022charsiug2p-dict, zhu2022charsiug2p-resources
 ---
 

@@ -5,7 +5,8 @@ title: Fluency
 description: L2 Mandarin Fluency <br><br><br><br>
 img: assets/img/project/fluency.jpg
 importance: 4
-category: past
+category: others
+related_talks: wright2015l2-c, wright2015the-effect-c, wright2015effects-c, wright2014task-c, wright2014examining-c,
 related_publications: wright2015disfluency, wright2014fluency
 ---
 

@@ -5,7 +5,7 @@ title: Others
 description: Other past projects <br><br><br><br>
 img: assets/img/project/past.jpg
 importance: 5
-category: past
+category: others
 ---
 
 I had research experiences in psycholinguistics (behavioural experiences, eye-tracking experiments, and EEG experiments), language acquisition, applied linguistics, computational linguistics, etc.

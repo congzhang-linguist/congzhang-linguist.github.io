@@ -5,7 +5,8 @@ title: Recording
 description: Remote recording methods comparison <br><br><br>
 img: assets/img/project/recording.png
 importance: 1
-category: past
+category: facilitating research
+related_talks: zhang2020speech-c
 related_publications: zhang2021comparing
 ---
 
