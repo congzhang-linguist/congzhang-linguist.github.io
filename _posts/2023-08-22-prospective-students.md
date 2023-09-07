@@ -38,7 +38,7 @@ There are three schools related to language/linguistic research:
 While ranking doesn't mean as much for a PhD student, it is important to point out that
 - Newcastle University is a Russell Group university (somewhat like Ivy-league in the US);
 - Newcastle's language-related degrees are internationally renowned, e.g. the department I am affiliated with, language and speech therapy, always ranks in the top 3 nationwide: [link](https://www.thecompleteuniversityguide.co.uk/league-tables/rankings/speech-and-language-therapy)  
-This is partically due to the (not very far history), the majority of the linguistics department was moved from Durham University to Newcastle.
+This is partically due to the (not very far) history, the majority of the linguistics department was moved from Durham University to Newcastle.
 
 ## Funding
 The major funding sources for art, humanities, and social sciences are:
@@ -49,7 +49,7 @@ The major funding sources for art, humanities, and social sciences are:
 
 For more detailed information for the above four, see [here](https://www.ncl.ac.uk/ecls/study-with-us/postgraduate-research/phd-opportunities/).
 
-- [China Scholarship Council](http://apply.csc.edu.cn/) for Chinese citizens only 
+- [China Scholarship Council](http://apply.csc.edu.cn/) (for Chinese citizens only)
 - [Marie Curie](https://www.findaphd.com/guides/marie-sklodowska-curie-actions-msca-phd-funding)
 
 Newcastle also have many opportunities for being a teaching assistant which can cover a large percentage of the cost.
