@@ -2,6 +2,10 @@
 layout: post
 title: For prospetive PhD students
 date: 2023-08-21 23:30:00
+tags: phd
+categories: information
+<!--thumbnail: assets/img/9.jpg-->
+featured: true
 description: Come and study with me
 ---
 
