@@ -17,10 +17,10 @@
   type: time_table
   contents:
     - title: Melissa Schorah
-      year: 2023
+      year: 2023 -
       description:
-        - "Individual differences in temporal predictions in speech: word segmentation and conversational turn-taking"
-        - Supervised with [Laurence White](https://www.ncl.ac.uk/ecls/people/profile/laurencewhite.html)
+        - "Topic - Individual differences in temporal predictions in speech: word segmentation and conversational turn-taking"
+        - Supervised with Laurence White
 
    
    
