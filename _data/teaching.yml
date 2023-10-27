@@ -13,6 +13,17 @@
         - "[SPE8210] Phonetics II: Gesture, Segment, Prosody"
 
 
+- title: Current PhD students
+  type: time_table
+  contents:
+    - title: Melissa Schorah
+      year: 2023
+      description:
+        - "Individual differences in temporal predictions in speech: word segmentation and conversational turn-taking"
+        - Supervised with [Laurence White](https://www.ncl.ac.uk/ecls/people/profile/laurencewhite.html)
+
+   
+   
 - title: Past Teaching
   type: time_table
   contents:
