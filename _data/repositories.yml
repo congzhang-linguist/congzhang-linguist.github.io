@@ -6,6 +6,6 @@ github_repos:
   - congzhang365/PythonScripts
   - congzhang365/featureTTS
   - congzhang365/rhythm.metrics
-  - congzhang365/charsiu
-  - congzhang365/CharsiuG2P
+  - lingjzhu/charsiu
+  - lingjzhu/CharsiuG2P
   
