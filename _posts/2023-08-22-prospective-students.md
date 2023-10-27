@@ -2,7 +2,7 @@
 layout: post
 title: For prospetive PhD students
 date: 2023-08-21 23:30:00
-tags: phd
+tags: phd info
 categories: information
 <!--thumbnail: assets/img/9.jpg-->
 featured: true
