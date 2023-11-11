@@ -55,6 +55,7 @@ For more detailed information for the above four, see [here](https://www.ncl.ac.
 
 - [China Scholarship Council](http://apply.csc.edu.cn/) (for Chinese citizens only)
 - [Marie Curie](https://www.findaphd.com/guides/marie-sklodowska-curie-actions-msca-phd-funding)
+- [Newcastle University Overseas Research Scholarships](https://www.ncl.ac.uk/postgraduate/fees-funding/search-funding/?code=nuors24): This award covers the difference between home and overseas fee rates (value to be determined for 2024/25. 2023/24 value approximately £16,188 to £24,088 per annum (depending on tuition fee band)).
 
 Newcastle also have many opportunities for being a teaching assistant which can cover a large percentage of the cost.
 Newcastle, as a city, also has very low housing price and low living cost.
