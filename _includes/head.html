@@ -29,3 +29,23 @@
     <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/dark_mode.js' | relative_url }}"></script>
     {% endif %}
+    
+
+    {% if page.images %}
+      <!-- Image comparison slider -->
+      {% if page.images.compare %}
+        <link
+      defer
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/img-comparison-slider@{{ site.img-comparison-slider.version }}/dist/styles.min.css">
+      {% endif %}
+      <!-- Image slider -->
+      {% if page.images.slider %}
+        <link
+      defer
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@{{ site.swiper.version }}/swiper-bundle.min.css"
+      integrity="{{ site.swiper.integrity.css }}"
+      crossorigin="anonymous">
+      {% endif %}
+    {% endif %}
