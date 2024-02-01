@@ -6,33 +6,38 @@ description: Making data collection more fun<br><br><br><br>
 img: assets/img/project/game.jpg
 importance: 1
 category: facilitating research
-images:
-  compare: true
-<!--  slider: true-->
+
 related_publications: kim2023collecting
 ---
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="{{ site.baseurl }}participant_info/">{abcd}</a>
-  </li>
-
-fafdafadsf
-
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="{{ site.baseurl }}participant_info/">{abcd}</a>
+We are advocating using gamification methods to collect linguistic data, especially phonetic data. In Kim, Kogan, Zhang (2023) below, we discussed the potential rationales and importance of gamifying linguistic experiments. As a follow-up, we are trialling a gamified system for a (socio-)phonetic project.
 
 
+## North East Language Game
 
-<img-comparison-slider>
-  {% include figure.liquid path="assets/img/project/gamification/county.png" class="img-fluid rounded z-depth-1" slot="first" %}
-  {% include figure.liquid path="assets/img/project/gamification/borough.png" class="img-fluid rounded z-depth-1" slot="second" %}
-</img-comparison-slider>
-<div class="caption">
-    Slide left or right to see both county level and borough level game interfaces.
+Currently, we (Dr. Cong Zhang, Yanyu Li, Damar Hoogland, and Dr. Daniel Duncan) are collecting game data through [this link](http://to-add-when-live):
+
+If you are one of our game players, the following resources may interest you:
+- <a href="{{ site.baseurl }}participant_info/">Participant Information Sheet</a>  
+This link contains information you are informed about before your participation.
+ 
+- <a href="{{ site.baseurl }}debriefing/">Debriefing</a>  
+This page will contain any information, such as the target answers for the game questions,  latest updates for our study results, and pulications.
+
+
+
+
+<div class="center">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/project/gamification/NU_ISS.png" title="Newcastle University Institute of Social Science" class="img-fluid rounded z-depth-1"  zoomable=false %}
+    </div>
 </div>
 
+<div class="caption">
+    <em>This project is funded by the Institute for Social Science, Newcastle University through a Pioneer Award to Dr. Cong Zhang.</em>
+</div>
 
-We are advocating using gamification methods to collect linguistic data.
+<br><br>
 
-More details to come.
+
 
 

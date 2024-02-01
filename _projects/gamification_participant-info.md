@@ -11,7 +11,7 @@ nav: false
 
 <div class="center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/project/gamification/NU_ISS.png" title="example image" class="img-fluid rounded z-depth-1"  zoomable=false %}
+        {% include figure.liquid path="assets/img/project/gamification/NU_ISS.png" title="Newcastle University Institute of Social Science" class="img-fluid rounded z-depth-1"  zoomable=false %}
     </div>
 </div>
 
@@ -27,7 +27,7 @@ You have been invited to take part in this study because you showed interests an
 
 - Your participation in this study will take approximately 10 minutes.  
   
-- Once research has been completed, we will debrief you on the main findings of the research via email or another meeting if you wish. Or you can follow this page for the latest outcomes of this project. You will also have access to a full copy of the research paper that we aim to produce.   
+- Once research has been completed, we will debrief you on the main findings of the research by subscribing to email alerts of major updates [form](https://forms.office.com/e/4XBrHP1HLv). Or you can follow [this page](https://congzhang-linguist.github.io/project/gamification/debriefing/) for answers to the game and the latest updates of this project. You will also have access to any publications derived from this project.   
 
 - It is completely voluntary to participate in this game. The top three players on the leader board of all players will be eligible to win £20, £15, and £10 respectively. All other who enter their contact details will be entered into a prize draw for chances to win vouchers at £10. There are 10 vouchers in total.  
 
