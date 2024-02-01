@@ -34,4 +34,3 @@ Fill in this [form](https://forms.office.com/e/4XBrHP1HLv) to subscribe to alert
 <div class="caption">
     <em>This project is funded by the Institute for Social Science, Newcastle University through a Pioneer Award to Dr. Cong Zhang.</em>
 </div>
-</div>
