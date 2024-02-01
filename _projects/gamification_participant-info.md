@@ -37,9 +37,9 @@ You have been invited to take part in this study because you showed interests an
 
 - Anonymised data will be uploaded to an online repository (the Open Science Framework) to be shared with other researchers for research purpose only. It is impossible for anyone to identify you as an individual from this information alone.  
 
-- Your rights to access, change or move your information are limited, as Newcastle University needs to manage your information in specific ways in order for the research to be reliable and accurate under UK General Data Protection Regulations. If you withdraw from the study, Newcastle University will keep the information about you that has already been obtained. To safeguard your rights, the minimum personally-identifiable information will be used. You can find out more about how Newcastle University uses your information at http://www.ncl.ac.uk/data.protection/PrivacyNotice and/or by contacting Newcastle University’s Data Protection Officer (Maureen Wilkinson, rec-man@ncl.ac.uk).  
+- Your rights to access, change or move your information are limited, as Newcastle University needs to manage your information in specific ways in order for the research to be reliable and accurate under UK General Data Protection Regulations. If you withdraw from the study, Newcastle University will keep the information about you that has already been obtained. To safeguard your rights, the minimum personally-identifiable information will be used. You can find out more about how Newcastle University uses your information at http://www.ncl.ac.uk/data.protection/PrivacyNotice and/or by contacting Newcastle University’s Data Protection Officer (Maureen Wilkinson, [rec-man@ncl.ac.uk](rec-man@ncl.ac.uk)).  
 
-- If you have any questions, requests or concerns regarding this research, please contact me via email at < cong.zhang@newcastle.ac.uk > or telephone: +44 (0) 191 208 5208.
+- If you have any questions, requests or concerns regarding this research, please contact me via email at [cong.zhang@newcastle.ac.uk](cong.zhang@newcastle.ac.uk) or telephone: +44 (0) 191 208 5208.
 
 
 
