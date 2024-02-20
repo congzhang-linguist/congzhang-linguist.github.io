@@ -6,7 +6,7 @@ permalink: /project/gamification/participant_info/
 nav: false
 ---
 
-# <b>The North East Language Game: </b> 
+# <b>Think you know North East accents? The North East Language Game: </b> 
 ### Participant Information Sheet
 
 <div class="center">
@@ -29,7 +29,7 @@ You have been invited to take part in this study because you showed interests an
   
 - Once research has been completed, we will debrief you on the main findings of the research by subscribing to email alerts of major updates [form](https://forms.office.com/e/4XBrHP1HLv). Or you can follow [this page](https://congzhang-linguist.github.io/project/gamification/debriefing/) for answers to the game and the latest updates of this project. You will also have access to any publications derived from this project.   
 
-- It is completely voluntary to participate in this game. The top three players on the leader board of all players will be eligible to win £20, £15, and £10 respectively. All other who enter their contact details will be entered into a prize draw for chances to win vouchers at £10. There are 10 vouchers in total.  
+- It is completely voluntary to participate in this game. The overall top three players will be eligible to win a £30 (first place), £20 (second place), and £10 (third place)  Sainsbury's or Tesco voucher. In the event of a tie, the winner will be determined through a draw. All others who enter their contact details will be entered into a prize draw for chances to win one of ten £10 vouchers.
 
 - You are free to decide whether or not to participate. If you decide to participate, you are free to withdraw at any time without any negative consequences for you.  
 

@@ -9,7 +9,7 @@ images:
 nav: false
 ---
 
-# <b>The North East Language Game: </b> 
+# <b>Think you know North East accents? The North East Language Game: </b> 
 ### Debriefing  
 
 Details about the study will be available after the data collection period. 

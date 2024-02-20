@@ -12,7 +12,7 @@ related_publications: kim2023collecting
 We are advocating using gamification methods to collect linguistic data, especially phonetic data. In Kim, Kogan, Zhang (2023) below, we discussed the potential rationales and importance of gamifying linguistic experiments. As a follow-up, we are trialling a gamified system for a (socio-)phonetic project.
 
 
-## North East Language Game
+## Think you know North East accents? North East Language Game
 
 Currently, we (Dr. Cong Zhang, Yanyu Li, Damar Hoogland, and Dr. Daniel Duncan) are collecting game data through [this link](http://to-add-when-live):
 
