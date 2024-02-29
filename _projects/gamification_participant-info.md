@@ -20,10 +20,11 @@ nav: false
 </div>
 
 
-- This is a research project by Dr. Cong Zhang, Yanyu Li, Damar Hoogland, and Dr. Daniel Duncan, Newcastle University. The project investigates how speech is perceived and is funded by Pi
-You have been invited to take part in this study because you showed interests and you are eligible for the study.  
+- This is a research project by Dr. Cong Zhang, Yanyu Li, Damar Hoogland, and Dr. Daniel Duncan, Newcastle University. The project investigates how speech is perceived and is funded by the Institute for Social Science, Newcastle University through a Pioneer Award to Dr. Cong Zhang.  
 
-- If you agree to take part in this study, you will follow the next three steps: 1)tell us some simple information about yourself (1min); 2) listen to some audio clips and identify the accents in the game (5min). If you want to enter the prize pool, you will need to leave your contact details. You will be given specific instructions before each task.  
+- You have been invited to take part in this study because you showed interests and you are eligible for the study.  
+
+- If you agree to take part in this study, you will follow the next three steps: 1)tell us some simple information about yourself; 2) listen to some audio clips and identify the accents in the game. If you want to enter the prize pool, you will need to leave your contact details. You will be given specific instructions before each task.   
 
 - Your participation in this study will take approximately 10 minutes.  
   
