@@ -66,5 +66,9 @@ Individuals living with dementia who lose the ability to speak, are at increased
 🖥️**Zoom Meeting ID**: 687 395 3555  
   
 📃Abstract:  
-TBC  
+Head and neck cancer (HNC) may be particularly traumatic. The cancer and its treatment commonly have adverse consequences on physical functioning (e.g., impaired speech, swallowing, breathing), appearance and mental health. Post-traumatic growth (PTG) is a term used to describe positive psychological changes following trauma. The development of PTG after cancer is associated with better health-related quality of life. This is of interest to cancer researchers interested in the development of supportive interventions, particularly for head and neck cancer, where there is inadequate evidence to support the effectiveness of psychosocial care. The Life after Head and Neck Cancer Study aimed to improve understanding of experiences of PTG after HNC and to identify what might support people to positively move on from their experiences.
+
+We interviewed twenty survivors of head and neck cancer about their HNC treatment and asked them to identify any positive outcomes. Using a range of qualitative analytic approaches, we first explored experiences of PTG. Then, guided by an established model of post-traumatic growth, we examined key elements thought to influence its development.
+
+Development of PTG following the trauma of HNC is a complex and individualised process. Fiona’s seminar will describe the study findings on PTG experiences, the nature and content of rumination after HNC, the role of self-disclosure and that of the unique environment of a HNC survivor. She will explore clinical implications of the findings and possible next steps towards intervention development.
 
