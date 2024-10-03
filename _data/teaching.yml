@@ -2,12 +2,14 @@
   type: time_table
   contents:
     - title: Undergraduates
-      year: 2022
+      year: 2022 - 
       description:
         - "[SPE1053] Linguistics and Phonetics I"
         - "[SPE2052] Linguistics and Phonetics II"
+        - "[DEN1101] Anatomy of Head and Neck"
+
     - title: Postgraduates
-      year: 2022
+      year: 2022 - 
       description:
         - "[SPE8151] Phonetics I: Speaker, Speech and Language"
         - "[SPE8210] Phonetics II: Gesture, Segment, Prosody"
@@ -24,8 +26,13 @@
     - title: Xinyu Zhu
       year: 2023 -
       description:
-        - "Topic - Variable Positioning of Adverbs"
+        - "Adverb reduplication"
         - Supervised with Michelle Sheehan and William van der Wurff   
+    - title: Adrian Yuanlong Wang
+      year: 2024 -
+      description:
+        - "Fricative perception"
+        - Supervised with Niamh Kelly and Rory Turnbull  
         
         
 - title: Past Teaching
