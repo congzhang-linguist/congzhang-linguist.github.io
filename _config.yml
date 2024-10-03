@@ -212,7 +212,7 @@ jekyll-archives:
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 
-display_tags: ['info', 'SLS-seminar'] # this tags will be dispalyed on the front page of your blog
+display_tags: ['info', 'SLSseminar'] # this tags will be dispalyed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
