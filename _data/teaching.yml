@@ -12,8 +12,6 @@
       description:
         - "[SPE8151] Phonetics I: Speaker, Speech and Language"
         - "[SPE8210] Phonetics II: Gesture, Segment, Prosody"
-
-
 - title: Current PhD students
   type: time_table
   contents:
@@ -76,8 +74,7 @@
 
     - title: "Language Acquisition"
       institution: "PARTNERS Programme, Newcastle University, UK"
-      year: Jul 2012
-      
+      year: Jul 2012   
 - title: Teaching Training and Qualifications
   type: time_table
   contents:
