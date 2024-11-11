@@ -6,7 +6,7 @@ description: Speech Prosody in Interaction - The form and function of intonation
 img: assets/img/project/sprint.png
 importance: 1
 category: prosody
-related_publications: gryllia2022many-shape, arvaniti2022dienstangling, zhang2021comparing
+related_publications: gryllia2022many-shape, arvaniti2022dienstangling, zhang2021comparing, zhang2024investigating
 related_talks: gryllia2022many-shape-c, arvaniti2022disentangling-c, arvaniti2021focus-c, jepson2021h-c, zhang2021comparing-phonetic-c
 related_resources:
 ---
