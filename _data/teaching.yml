@@ -2,16 +2,17 @@
   type: time_table
   contents:
     - title: Undergraduates
-      year: 2022 - 
+      year: 2025
       description:
-        - "[SPE1053] Linguistics and Phonetics I"
-        - "[SPE2052] Linguistics and Phonetics II"
+        - "[SPE1059] Phonetics and Phonology I: Fundamentals"
+        - "[SPE2056] Phonetics and Phonology II: Advanced"
+        - "[SPE1051] Research Methods in Practice I"
         - "[DEN1101] Anatomy of Head and Neck"
     - title: Postgraduates
-      year: 2022 - 
+      year: 2025
       description:
-        - "[SPE8151] Phonetics I: Speaker, Speech and Language"
-        - "[SPE8210] Phonetics II: Gesture, Segment, Prosody"
+        - "[SPE8151] MSc Phonetics and Phonology I: Fundamentals"
+        - "[SPE8210] MSc Phonetics and Phonology II: Advanced"
 - title: Current PhD students
   type: time_table
   contents:
@@ -33,6 +34,18 @@
 - title: Past Teaching
   type: time_table
   contents:
+    - title: Undergraduates
+      year: 2022 - 2025
+      description:
+        - "[SPE1053] Linguistics and Phonetics I"
+        - "[SPE2052] Linguistics and Phonetics II"
+        - "[DEN1101] Anatomy of Head and Neck"
+    - title: Postgraduates
+      year: 2022 - 2025
+      description:
+        - "[SPE8151] Phonetics I: Speaker, Speech and Language"
+        - "[SPE8210] Phonetics II: Gesture, Segment, Prosody"
+        
     - title: "[LET-ETCENB102] British English Phonetics - Seminars"
       institution: "Radboud University, Netherlands [UG]"
       year: 2021-2022
