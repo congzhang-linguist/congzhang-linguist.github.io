@@ -2,17 +2,21 @@
   type: time_table
   contents:
     - title: Undergraduates
-      year: 2025
+      year: 2025 -
       description:
         - "[SPE1059] Phonetics and Phonology I: Fundamentals"
         - "[SPE2056] Phonetics and Phonology II: Advanced"
         - "[SPE1051] Research Methods in Practice I"
-        - "[DEN1101] Anatomy of Head and Neck"
     - title: Postgraduates
-      year: 2025
+      year: 2025 -
       description:
         - "[SPE8151] MSc Phonetics and Phonology I: Fundamentals"
         - "[SPE8210] MSc Phonetics and Phonology II: Advanced"
+    - title: School of Dental Sciences
+      year: 2024 -
+      description:
+        - "[DEN1101] Anatomy of Head and Neck"
+
 - title: Current PhD students
   type: time_table
   contents:
@@ -24,27 +28,24 @@
     - title: Xinyu Zhu
       year: 2023 -
       description:
-        - "Adverb reduplication"
+        - "Topic - Adverb reduplication"
         - Supervised with Michelle Sheehan and William van der Wurff   
     - title: Adrian Yuanlong Wang
       year: 2024 -
       description:
-        - "Fricative perception"
+        - "Topic - Mandarin fricative perception"
         - Supervised with Niamh Kelly and Rory Turnbull         
 - title: Past Teaching
   type: time_table
   contents:
-    - title: Undergraduates
+    - title: Past Newcastle phonetics courses
       year: 2022 - 2025
       description:
-        - "[SPE1053] Linguistics and Phonetics I"
-        - "[SPE2052] Linguistics and Phonetics II"
-        - "[DEN1101] Anatomy of Head and Neck"
-    - title: Postgraduates
-      year: 2022 - 2025
-      description:
-        - "[SPE8151] Phonetics I: Speaker, Speech and Language"
-        - "[SPE8210] Phonetics II: Gesture, Segment, Prosody"
+        - "[SPE1053] Linguistics and Phonetics I [UG]"
+        - "[SPE2052] Linguistics and Phonetics II [UG]"
+        - "[SPE8151] Phonetics I: Speaker, Speech and Language [PG]"
+        - "[SPE8210] Phonetics II: Gesture, Segment, Prosody [PG]"
+      institution: "Newcastle University, UK"
         
     - title: "[LET-ETCENB102] British English Phonetics - Seminars"
       institution: "Radboud University, Netherlands [UG]"
