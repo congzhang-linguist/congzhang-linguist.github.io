@@ -20,20 +20,20 @@
 - title: Current PhD students
   type: time_table
   contents:
-    - title: Melissa Schorah [funded by ESRC NINE DTP]
+    - title: Melissa Schorah 
       year: 2023 -
       description:
-        - "Topic - Individual differences in temporal predictions in speech: word segmentation and conversational turn-taking"
+        - "Topic - Individual differences in temporal predictions in speech: word segmentation and conversational turn-taking [funded by ESRC NINE DTP]"
         - Supervised with Laurence White
     - title: Xinyu Zhu
       year: 2023 -
       description:
         - "Topic - Adverb reduplication"
         - Supervised with Michelle Sheehan and William van der Wurff   
-    - title: Adrian Yuanlong Wang [funded by Iland Studentship]
+    - title: Adrian Yuanlong Wang
       year: 2024 -
       description:
-        - "Topic - Mandarin fricative perception"
+        - "Topic - Mandarin fricative perception [funded by Iland Studentship]"
         - Supervised with Niamh Kelly and Rory Turnbull         
 - title: Past Teaching
   type: time_table
