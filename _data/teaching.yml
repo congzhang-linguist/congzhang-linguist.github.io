@@ -20,7 +20,7 @@
 - title: Current PhD students
   type: time_table
   contents:
-    - title: Melissa Schorah
+    - title: Melissa Schorah [funded by ESRC NINE DTP]
       year: 2023 -
       description:
         - "Topic - Individual differences in temporal predictions in speech: word segmentation and conversational turn-taking"
@@ -30,7 +30,7 @@
       description:
         - "Topic - Adverb reduplication"
         - Supervised with Michelle Sheehan and William van der Wurff   
-    - title: Adrian Yuanlong Wang
+    - title: Adrian Yuanlong Wang [funded by Iland Studentship]
       year: 2024 -
       description:
         - "Topic - Mandarin fricative perception"
@@ -92,6 +92,9 @@
 - title: Teaching Training and Qualifications
   type: time_table
   contents:
+    - title: "Trainer in Preregistration and Registered Reports"
+      institution: "UK Reproducibility Network"
+      year: Oct 2025
     - title: "Fellowship of the Higher Education Academy"
       institution: "AdvanceHE, UK"
       year: Nov 2023  
