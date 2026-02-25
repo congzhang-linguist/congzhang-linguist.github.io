@@ -1,26 +1,30 @@
 - title: Selected grants and awards
   type: time_table
   contents:
-   - title: Research Assistant Grant
+    - title: Research Assistant Grant
       institution: British Institute of Persian Studies
       year: 2025
       description:
         - "PUFIN: Persian Utterance Final Intonation"
-   - title: Discover Festival Grant
+        
+    - title: Discover Festival Grant
       institution: Newcastle University and the Great North Museum: Hancock
       year: 2025
       description:
         - "Funded knowledge-exchange event: Howay! Think you know a North-East accent when you hear one?"
+        
     - title: ESRC Impact Acceleration Account Grant
       institution: Economic and Social Research Council, UK Research and Innovation
       year: 2024
       description:
         - "Funded knowledge-exchange event: Wey aye, man - Think you know a North-East accent when you hear one?"
+        
     - title: Pioneer Award
       institution: Awarded by Institute of Social Sciences, Newcastle University
       year: 2022
       description:
         - "Funded Project: Collecting big data through citizen science: gamifying remote phonetic data collection"
+        
     - title: Postdoctoral Research Associate Summer Research Prize
       institution: Awarded by University of Kent
       year: 2020
