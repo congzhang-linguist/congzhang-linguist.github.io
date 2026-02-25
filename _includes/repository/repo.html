@@ -8,10 +8,15 @@
 
 <div class="repo p-2 text-center">
   <a href="https://github.com/{{ include.repository }}">
-    <img class="repo-img-light w-100"
-     src="https://img.shields.io/github/stars/{{ repo_url.first }}/{{ repo_url.last }}?style=flat-square">
-<img class="repo-img-dark w-100"
-     src="https://img.shields.io/github/stars/{{ repo_url.first }}/{{ repo_url.last }}?style=flat-square&color=white">
+    <div class="repo-name mb-2">
+      {{ repo_url.last }}
+    </div>
 
+    <img class="repo-img-light w-100"
+         src="https://img.shields.io/github/stars/{{ repo_url.first }}/{{ repo_url.last }}?style=flat-square">
+
+    <img class="repo-img-dark w-100"
+         src="https://img.shields.io/github/stars/{{ repo_url.first }}/{{ repo_url.last }}?style=flat-square&color=white">
   </a>
 </div>
+
