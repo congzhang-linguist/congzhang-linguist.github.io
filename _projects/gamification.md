@@ -204,11 +204,8 @@ related_talks: gamifying-c
 </style>
 
 <div class="gpage">
-
-<div class="gpage-intro">
-  This project examines gamification as a methodological solution to long-standing challenges in research data collection, particularly issues of scale, participant diversity, and ecological validity. We use gamified approaches to embed experimental tasks within engaging interfaces that allow for large-scale data collection outside the laboratory. The project includes both a theoretical overview of gamified approaches in applied linguistics \citep{kim2024collecting}, and an empirical implementation using an accent identification game in North East England (Li et al., 2026). Together, these studies evaluate whether gamification can function as a valid experimental paradigm for linguistics research. This project is funded by the Institute for Social Science, Newcastle University through a Pioneer Award to Dr. Cong Zhang.<br><br>
+  This project examines gamification as a methodological solution to long-standing challenges in research data collection, particularly issues of scale, participant diversity, and ecological validity. We use gamified approaches to embed experimental tasks within engaging interfaces that allow for large-scale data collection outside the laboratory. The project includes both a theoretical overview of gamified approaches in applied linguistics \citep{kim2024collecting}, and an empirical implementation using an accent identification game in North East England (Li et al., 2026). Together, these studies evaluate whether gamification can function as a valid experimental paradigm for linguistics research. <br><br>
   University project site: <a href="https://research.ncl.ac.uk/ne-accent-games/" target="_blank">research.ncl.ac.uk/ne-accent-games</a>
-</div>
 
 <div class="section-label">North East Language Game</div>
 <div class="section-title">Think you know North East accents?</div>
@@ -235,27 +232,24 @@ related_talks: gamifying-c
   </div>
 </div>
 
-<div class="center">
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/project/gamification/NU_ISS.png" title="Newcastle University Institute of Social Science" class="img-fluid rounded z-depth-1" zoomable=false %}
-  </div>
-</div>
-<div class="funding-note">
-  Game screenshots. 
-</div>
+
+
+<hr class="section-divider">
+
+<div class="section-label">Game screenshots</div>
 
 <!-- ======= AUTO-PLAYING PHOTO GALLERY ======= -->
 <div class="gslideshow">
   <div class="gslides">
-    <div class="gslide active">{% include figure.liquid path="assets/img/project/gamification/game1.jpg" title="Photo 1" class="img-fluid" zoomable=false %}</div>
-    <div class="gslide">{% include figure.liquid path="assets/img/project/gamification/game2.jpg" title="Photo 2" class="img-fluid" zoomable=false %}</div>
-    <div class="gslide">{% include figure.liquid path="assets/img/project/gamification/game3.jpg" title="Photo 3" class="img-fluid" zoomable=false %}</div>
-    <div class="gslide">{% include figure.liquid path="assets/img/project/gamification/game4.jpg" title="Photo 4" class="img-fluid" zoomable=false %}</div>
-    <div class="gslide">{% include figure.liquid path="assets/img/project/gamification/game5.jpg" title="Photo 5" class="img-fluid" zoomable=false %}</div>
-    <div class="gslide">{% include figure.liquid path="assets/img/project/gamification/game6.jpg" title="Photo 6" class="img-fluid" zoomable=false %}</div>
-    <div class="gslide">{% include figure.liquid path="assets/img/project/gamification/game7.jpg" title="Photo 7" class="img-fluid" zoomable=false %}</div>
-    <div class="gslide">{% include figure.liquid path="assets/img/project/gamification/game8.jpg" title="Photo 8" class="img-fluid" zoomable=false %}</div>
-    <div class="gslide">{% include figure.liquid path="assets/img/project/gamification/game9.jpg" title="Photo 9" class="img-fluid" zoomable=false %}</div>
+    <div class="gslide active">{% include figure.liquid path="assets/img/project/gamification/game1.png" title="Photo 1" class="img-fluid" zoomable=false %}</div>
+    <div class="gslide">{% include figure.liquid path="assets/img/project/gamification/game2.png" title="Photo 2" class="img-fluid" zoomable=false %}</div>
+    <div class="gslide">{% include figure.liquid path="assets/img/project/gamification/game3.png" title="Photo 3" class="img-fluid" zoomable=false %}</div>
+    <div class="gslide">{% include figure.liquid path="assets/img/project/gamification/game4.png" title="Photo 4" class="img-fluid" zoomable=false %}</div>
+    <div class="gslide">{% include figure.liquid path="assets/img/project/gamification/game5.png" title="Photo 5" class="img-fluid" zoomable=false %}</div>
+    <div class="gslide">{% include figure.liquid path="assets/img/project/gamification/game6.png" title="Photo 6" class="img-fluid" zoomable=false %}</div>
+    <div class="gslide">{% include figure.liquid path="assets/img/project/gamification/game7.png" title="Photo 7" class="img-fluid" zoomable=false %}</div>
+    <div class="gslide">{% include figure.liquid path="assets/img/project/gamification/game8.png" title="Photo 8" class="img-fluid" zoomable=false %}</div>
+    <div class="gslide">{% include figure.liquid path="assets/img/project/gamification/game9.png" title="Photo 9" class="img-fluid" zoomable=false %}</div>
   </div>
   <button class="gbtn prev" onclick="gStep(-1)">&#10094;</button>
   <button class="gbtn next" onclick="gStep(1)">&#10095;</button>
@@ -291,8 +285,6 @@ related_talks: gamifying-c
 
 
 
-{% include figure.liquid path="assets/img/project/gamification/Wey_aye.jpg" title="Wey aye man" class="weyaye-img" zoomable=false %}
-
 <div class="section-label">Media Coverage</div>
 <div class="media-grid">
   <a class="media-item" href="https://www.bbc.co.uk/news/articles/crezw2zx138o" target="_blank">
@@ -312,6 +304,16 @@ related_talks: gamifying-c
   </a>
 </div>
 
+<div class="center">
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/project/gamification/NU_ISS.png" title="Newcastle University Institute of Social Science" class="img-fluid rounded z-depth-1" zoomable=false %}
+  </div>
+</div>
+<div class="funding-note">
+  This project is funded by the Institute for Social Science, Newcastle University through a Pioneer Award to Dr. Cong Zhang.
+</div>
+
+<!--{% include figure.liquid path="assets/img/project/gamification/Wey_aye.jpg" title="Wey aye man" class="weyaye-img" zoomable=false %}-->
 
 </div>
 
