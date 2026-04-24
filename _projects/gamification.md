@@ -206,7 +206,8 @@ related_talks: gamifying-c
 <div class="gpage">
   This project examines gamification as a methodological solution to long-standing challenges in research data collection, particularly issues of scale, participant diversity, and ecological validity. We use gamified approaches to embed experimental tasks within engaging interfaces that allow for large-scale data collection outside the laboratory. The project includes both a theoretical overview of gamified approaches in applied linguistics \citep{kim2024collecting}, and an empirical implementation using an accent identification game in North East England (Li et al., 2026). Together, these studies evaluate whether gamification can function as a valid experimental paradigm for linguistics research. <br><br>
   University project site: <a href="https://research.ncl.ac.uk/ne-accent-games/" target="_blank">research.ncl.ac.uk/ne-accent-games</a>
-
+    
+<hr class="section-divider">
 <div class="section-label">North East Language Game</div>
 <div class="section-title">Think you know North East accents?</div>
 
@@ -313,7 +314,6 @@ related_talks: gamifying-c
   This project is funded by the Institute for Social Science, Newcastle University through a Pioneer Award to Dr. Cong Zhang.
 </div>
 
-<!--{% include figure.liquid path="assets/img/project/gamification/Wey_aye.jpg" title="Wey aye man" class="weyaye-img" zoomable=false %}-->
 
 </div>
 
