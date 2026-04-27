@@ -31,20 +31,37 @@ html[data-theme='dark'] .only-dark {
 }
 
 
-.repo-container {
-  background-color: var(--global-bg-color);
-  width: 100%; /* Makes them stack nicely on mobile */
-  max-width: 48%; /* Allows two per row on desktop */
-  min-height: 250px; /* Keeps boxes consistent */
+/* Container for the whole grid of repos */
+.repositories {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch; /* This forces all items in a row to the same height */
+  gap: 20px; /* Adds space between the cards */
 }
 
+/* Individual Card Container */
+.repo-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensures it fills the stretched space */
+  justify-content: space-between; /* Pushes content apart */
+  background-color: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+}
+
+/* The GitHub Card image part */
+.repo {
+  flex-grow: 0;
+}
+
+/* The Recommendation text part */
 .repo-recommendation {
-  font-size: 0.9rem;
-  line-height: 1.4;
+  flex-grow: 1; /* This makes this section "grow" to fill empty space */
+  display: flex;
+  align-items: center; /* Vertically centers the text in that extra space */
   border-top: 1px solid var(--global-divider-color);
+  margin-top: 10px;
   padding-top: 10px;
 }
 
