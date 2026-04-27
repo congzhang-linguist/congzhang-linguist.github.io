@@ -2,10 +2,15 @@ github_users:
   - congzhang365
 
 github_repos:
-  - congzhang365/Praat
-  - congzhang365/PythonScripts
-  - congzhang365/feature_tts
-  - congzhang365/rhythm.metrics
-  - lingjzhu/charsiu
-  - lingjzhu/CharsiuG2P
-  
+  - id: congzhang365/Praat
+    recommendation: "Various praat scripts."
+  - id: congzhang365/PythonScripts
+    recommendation: "Various python scripts."
+  - id: congzhang365/feature_tts
+    recommendation: "A theory-based small-language TTS system."
+  - id: congzhang365/rhythm.metrics
+    recommendation: "R package for calculating and visualising rhythm metrics."
+  - id: lingjzhu/charsiu
+    recommendation: "Charsiu Phonetic Aligner -- handles both textless alignment and forced alignment."
+  - id: lingjzhu/CharsiuG2P
+    recommendation: "G2P resources for 100 languages."

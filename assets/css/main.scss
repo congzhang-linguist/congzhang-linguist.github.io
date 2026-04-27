@@ -14,7 +14,7 @@ $max-content-width: {{ site.max_width }};
   "distill"
 ;
 
-
+/* --- MY CUSTOMIZATIONS --- */
 /* Hide dark-mode images by default */
 .only-dark {
   display: none !important;
@@ -29,3 +29,23 @@ html[data-theme='dark'] .only-light {
 html[data-theme='dark'] .only-dark {
   display: block !important;
 }
+
+
+.repo-container {
+  background-color: var(--global-bg-color);
+  width: 100%; /* Makes them stack nicely on mobile */
+  max-width: 48%; /* Allows two per row on desktop */
+  min-height: 250px; /* Keeps boxes consistent */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.repo-recommendation {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  border-top: 1px solid var(--global-divider-color);
+  padding-top: 10px;
+}
+
+/* --- END OF MY CUSTOMIZATIONS --- */

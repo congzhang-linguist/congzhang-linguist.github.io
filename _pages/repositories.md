@@ -21,10 +21,16 @@ nav_order: 4
 
 ## GitHub Repositories
 
-{% if site.data.repositories.github_repos %}
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for repo in site.data.repositories.github_repos %}
-    {% include repository/repo.html repository=repo %}
+  {% for repo_item in site.data.repositories.github_repos %}
+    <div class="repo-container p-3 mb-4 border rounded">
+      {% include repository/repo.html repository=repo_item.id %}
+      
+      {% if repo_item.recommendation %}
+        <div class="repo-recommendation mt-2 text-muted italic">
+          <i class="fa-solid fa-quote-left"></i> {{ repo_item.recommendation }}
+        </div>
+      {% endif %}
+    </div>
   {% endfor %}
 </div>
-{% endif %}
