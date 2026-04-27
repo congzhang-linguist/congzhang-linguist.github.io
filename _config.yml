@@ -119,7 +119,9 @@ disqus_shortname: cong # put your disqus shortname
 #external_sources:
 #  - name: medium.com
 #    rss_url: https://medium.com/@al-folio/feed
-
+external_services:
+  github_readme_stats_url: https://github-readme-stats.vercel.app
+  github_profile_trophy_url: https://github-profile-trophy.vercel.app
 # -----------------------------------------------------------------------------
 # Collections
 # -----------------------------------------------------------------------------
