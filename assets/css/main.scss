@@ -57,12 +57,12 @@ html[data-theme='dark'] .only-dark {
 
 /* The Recommendation text part */
 .repo-recommendation {
-  flex-grow: 1; /* This makes this section "grow" to fill empty space */
-  display: flex;
-  align-items: center; /* Vertically centers the text in that extra space */
-  border-top: 1px solid var(--global-divider-color);
-  margin-top: 10px;
-  padding-top: 10px;
+  margin-top: auto;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Change this number to show more/less lines */
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* --- END OF MY CUSTOMIZATIONS --- */
