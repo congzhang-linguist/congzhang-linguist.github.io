@@ -13,3 +13,19 @@ $max-content-width: {{ site.max_width }};
   "base",
   "distill"
 ;
+
+
+/* Hide dark-mode images by default */
+.only-dark {
+  display: none !important;
+}
+
+/* Hide light-mode images when the html has the [data-theme='dark'] attribute */
+html[data-theme='dark'] .only-light {
+  display: none !important;
+}
+
+/* Show dark-mode images when the html has the [data-theme='dark'] attribute */
+html[data-theme='dark'] .only-dark {
+  display: block !important;
+}
