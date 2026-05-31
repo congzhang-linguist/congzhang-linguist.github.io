@@ -19,7 +19,7 @@
 
 {% comment %} ... (Keep your existing lang and max_lines logic here) ... {% endcomment %}
 
-<div class="repo p-2 text-center">
+<!-- <div class="repo p-2 text-center">
   <a href="https://github.com/{{ repo_path }}">
     <img
       class="only-light w-100"
@@ -34,6 +34,18 @@
   </a>
 
   {% comment %} This is where your new recommendation text will appear {% endcomment %}
+  {% if recommendation %}
+    <div class="repo-recommendation mt-2 italic" style="font-size: 0.9rem; text-align: left; padding: 0 10px;">
+       {{ recommendation }}
+    </div>
+  {% endif %}
+</div> -->
+
+<div class="repo p-2 text-center">
+  <a href="https://github.com/{{ repo_path }}" style="text-decoration: none; font-size: 3rem; display: block; padding: 20px 0;">
+    💻
+  </a>
+
   {% if recommendation %}
     <div class="repo-recommendation mt-2 italic" style="font-size: 0.9rem; text-align: left; padding: 0 10px;">
        {{ recommendation }}
