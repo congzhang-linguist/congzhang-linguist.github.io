@@ -412,11 +412,35 @@ nav_order: 6
   <div class="resource-card" data-type="webapp">
     <div class="resource-header">
       <div class="resource-title">
+        <a href="https://congzhang365.github.io/IPA_flashcard/" target="_blank">IPA Flashcard</a>
+      </div>
+      <span class="resource-badge badge-webapp">Web App</span>
+    </div>
+    <div class="resource-meta">Cong Zhang · 2026</div>
+    <div class="resource-description">
+      An interactive flashcard tool to learn IPA symbol, labels, pronunciation, and examples.
+    </div>
+    <div class="resource-links">
+      <a class="resource-link" href="https://congzhang365.github.io/IPA_flashcard/" target="_blank">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        Open App
+      </a>
+      <a class="resource-link" href="https://github.com/congzhang365/IPA_flashcard" target="_blank">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+        GitHub
+      </a>
+    </div>
+  </div>
+
+
+  <div class="resource-card" data-type="webapp">
+    <div class="resource-header">
+      <div class="resource-title">
         <a href="https://congzhang365.github.io/IPA_keyboard/" target="_blank">IPA Keyboard</a>
       </div>
       <span class="resource-badge badge-webapp">Web App</span>
     </div>
-    <div class="resource-meta">Cong Zhang · 2022</div>
+    <div class="resource-meta">Cong Zhang · 2026</div>
     <div class="resource-description">
       An IPA keyboard for phonetics exams that deliberately hides three-term labels, so it doesn't give away answers.
     </div>
@@ -432,8 +456,9 @@ nav_order: 6
     </div>
   </div>
 
+
   <!-- Additional Resources (not in YAML) -->
-  <div class="resource-card" data-type="dataset">
+  <div class="resource-card" data-type="webapp">
     <div class="resource-header">
       <div class="resource-title">
         <a href="https://github.com/lingjzhu/CharsiuG2P/tree/main/dicts" target="_blank">CharsiuG2P dictionaries</a>
