@@ -448,33 +448,6 @@ nav_order: 6
   {% endfor %}
 
   <!-- Additional Resources (not in YAML) -->
-  <div class="resource-card" data-type="dataset">
-    <div class="resource-header">
-      <div class="resource-title">
-        <a href="https://github.com/lingjzhu/CharsiuG2P/tree/main/dicts" target="_blank">CharsiuG2P dictionaries</a>
-      </div>
-      <span class="resource-badge badge-dataset">Dataset</span>
-    </div>
-    <div class="resource-meta">Jian Zhu, Cong Zhang, David Jurgens · 2022</div>
-    <div class="resource-description">Pronunciation dictionaries for over 100 languages, collected for the CharsiuG2P project.</div>
-    <div class="resource-links">
-      <a class="resource-link" href="https://github.com/lingjzhu/CharsiuG2P/tree/main/dicts" target="_blank">Browse</a>
-    </div>
-  </div>
-
-  <div class="resource-card" data-type="dataset">
-    <div class="resource-header">
-      <div class="resource-title">
-        <a href="https://drive.google.com/drive/folders/1ixUTT7cjYLYAzH77Ku29KaQXin8WVyX-" target="_blank">Aligned Common Voice English</a>
-      </div>
-      <span class="resource-badge badge-dataset">Dataset</span>
-    </div>
-    <div class="resource-meta">Jian Zhu, Cong Zhang · 2022</div>
-    <div class="resource-description">Word and phone alignments for ~2000 hours of English from Common Voice (860k utterances).</div>
-    <div class="resource-links">
-      <a class="resource-link" href="https://drive.google.com/drive/folders/1ixUTT7cjYLYAzH77Ku29KaQXin8WVyX-" target="_blank">Download</a>
-    </div>
-  </div>
 
   <div class="resource-card" data-type="dataset">
     <div class="resource-header">
