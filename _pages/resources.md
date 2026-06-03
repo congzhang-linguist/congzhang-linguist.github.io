@@ -120,13 +120,13 @@ nav_order: 6
     letter-spacing: 0.03em;
   }
 
-  .badge-code {
+  .badge-package {
     background: #eef2ff;
     color: #1e40af;
     border: 0.5px solid #cddcff;
   }
 
-  html[data-theme='dark'] .badge-code {
+  html[data-theme='dark'] .badge-package {
     background: #1e2a4a;
     color: #93c5fd;
     border-color: #374151;
@@ -156,13 +156,13 @@ nav_order: 6
     border-color: #2a4a3a;
   }
 
-  .badge-tool {
+  .badge-package {
     background: #f1e6ff;
     color: #5b21b6;
     border: 0.5px solid #e2ceff;
   }
 
-  html[data-theme='dark'] .badge-tool {
+  html[data-theme='dark'] .badge-package {
     background: #2a1a4a;
     color: #c4b5fd;
     border-color: #3a2a5a;
@@ -292,7 +292,7 @@ nav_order: 6
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H5.78a1.65 1.65 0 0 0-1.51 1 1.65 1.65 0 0 0 .33 1.82l.03.03A10 10 0 0 0 12 17.66a10 10 0 0 0 6.37-2.63z"/><path d="M12 2v3"/><path d="M12 22v-3"/></svg>
     All
   </button>
-  <button class="filter-btn" data-filter="code">
+  <button class="filter-btn" data-filter="repo">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
     Code
   </button>
@@ -310,13 +310,103 @@ nav_order: 6
   </button>
   <button class="filter-btn" data-filter="tool">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-    Tool
+    Package
   </button>
 </div>
 
-<p class="count-label"><span id="resource-count">19</span> resources — open access, free to use</p>
-
 <div class="resources-grid" id="resources-grid">
+
+
+
+  <!-- Code Repositories from your YAML -->
+  {% for repo in site.data.repositories.github_repos %}
+    {% assign repo_parts = repo.id | split: '/' %}
+    {% assign repo_name = repo_parts[1] %}
+    
+    {% if repo.id contains "Praat" %}
+    <div class="resource-card" data-type="repo">
+      <div class="resource-header">
+        <div class="resource-title">
+          <a href="https://github.com/{{ repo.id }}" target="_blank">Praat Scripts</a>
+        </div>
+        <span class="resource-badge badge-repo">Repository</span>
+      </div>
+      <div class="resource-meta">Cong Zhang · GitHub</div>
+      <div class="resource-description">{{ repo.recommendation }}</div>
+      <div class="resource-links">
+        <a class="resource-link" href="https://github.com/{{ repo.id }}" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+    {% elsif repo.id contains "PythonScripts" %}
+    <div class="resource-card" data-type="repo">
+      <div class="resource-header">
+        <div class="resource-title">
+          <a href="https://github.com/{{ repo.id }}" target="_blank">Python Scripts</a>
+        </div>
+        <span class="resource-badge badge-repo">Repository</span>
+      </div>
+      
+      
+      <div class="resource-meta">Cong Zhang · GitHub</div>
+      <div class="resource-description">{{ repo.recommendation }}</div>
+      <div class="resource-links">
+        <a class="resource-link" href="https://github.com/{{ repo.id }}" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+    {% elsif repo.id contains "rhythm.metrics" %}
+    <div class="resource-card" data-type="package">
+      <div class="resource-header">
+        <div class="resource-title">
+          <a href="https://github.com/{{ repo.id }}" target="_blank">rhythm.metrics (R package)</a>
+        </div>
+        <span class="resource-badge badge-package">Package</span>
+      </div>
+      <div class="resource-meta">Cong Zhang · 2022</div>
+      <div class="resource-description">{{ repo.recommendation }} Includes ΔC/ΔV, Varco, %V, rPVI_C, nPVI_V metrics.</div>
+      <div class="resource-links">
+        <a class="resource-link" href="https://github.com/{{ repo.id }}" target="_blank">GitHub</a>
+        <a class="resource-link" href="https://osf.io/kfnzt" target="_blank">OSF</a>
+        <a class="resource-link" href="https://osf.io/q6edh/download" target="_blank">PDF</a>
+      </div>
+    </div>
+    {% elsif repo.id contains "charsiu" and repo.id contains "G2P" == false %}
+    <div class="resource-card" data-type="package">
+      <div class="resource-header">
+        <div class="resource-title">
+          <a href="https://github.com/{{ repo.id }}" target="_blank">Charsiu Phonetic Aligner</a>
+        </div>
+        <span class="resource-badge badge-package">Package</span>
+      </div>
+      <div class="resource-meta">Jian Zhu, Cong Zhang, David Jurgens · 2022</div>
+      <div class="resource-description">{{ repo.recommendation }} Handles both forced alignment and textless phonetic alignment.</div>
+      <div class="resource-links">
+        <a class="resource-link" href="https://github.com/{{ repo.id }}" target="_blank">GitHub</a>
+        <a class="resource-link" href="https://arxiv.org/pdf/2110.03876" target="_blank">Paper</a>
+      </div>
+    </div>
+    {% elsif repo.id contains "CharsiuG2P" %}
+    <div class="resource-card" data-type="package">
+      <div class="resource-header">
+        <div class="resource-title">
+          <a href="https://github.com/{{ repo.id }}" target="_blank">CharsiuG2P</a>
+        </div>
+        <span class="resource-badge badge-package">Package</span>
+      </div>
+      <div class="resource-meta">Jian Zhu, Cong Zhang, David Jurgens · 2022</div>
+      <div class="resource-description">{{ repo.recommendation }} Transformer-based grapheme-to-phoneme conversion.</div>
+      <div class="resource-links">
+        <a class="resource-link" href="https://github.com/{{ repo.id }}" target="_blank">GitHub</a>
+        <a class="resource-link" href="https://www.isca-speech.org/archive/pdfs/interspeech_2022/zhu22_interspeech.pdf" target="_blank">Paper</a>
+      </div>
+    </div>
+    {% endif %}
+  {% endfor %}
 
   <!-- Web Apps -->
   <div class="resource-card" data-type="webapp">
@@ -342,133 +432,28 @@ nav_order: 6
     </div>
   </div>
 
-  <!-- Code Repositories from your YAML -->
-  {% for repo in site.data.repositories.github_repos %}
-    {% assign repo_parts = repo.id | split: '/' %}
-    {% assign repo_name = repo_parts[1] %}
-    
-    {% if repo.id contains "Praat" %}
-    <div class="resource-card" data-type="code">
-      <div class="resource-header">
-        <div class="resource-title">
-          <a href="https://github.com/{{ repo.id }}" target="_blank">Praat Scripts</a>
-        </div>
-        <span class="resource-badge badge-code">Code</span>
-      </div>
-      <div class="resource-meta">Cong Zhang · GitHub</div>
-      <div class="resource-description">{{ repo.recommendation }}</div>
-      <div class="resource-links">
-        <a class="resource-link" href="https://github.com/{{ repo.id }}" target="_blank">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
-          GitHub
-        </a>
-      </div>
-    </div>
-    {% elsif repo.id contains "PythonScripts" %}
-    <div class="resource-card" data-type="code">
-      <div class="resource-header">
-        <div class="resource-title">
-          <a href="https://github.com/{{ repo.id }}" target="_blank">Python Scripts</a>
-        </div>
-        <span class="resource-badge badge-code">Code</span>
-      </div>
-      <div class="resource-meta">Cong Zhang · GitHub</div>
-      <div class="resource-description">{{ repo.recommendation }}</div>
-      <div class="resource-links">
-        <a class="resource-link" href="https://github.com/{{ repo.id }}" target="_blank">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
-          GitHub
-        </a>
-      </div>
-    </div>
-    {% elsif repo.id contains "feature_tts" %}
-    <div class="resource-card" data-type="code">
-      <div class="resource-header">
-        <div class="resource-title">
-          <a href="https://github.com/{{ repo.id }}" target="_blank">FeatureTTS</a>
-        </div>
-        <span class="resource-badge badge-code">Code</span>
-      </div>
-      <div class="resource-meta">Cong Zhang · GitHub</div>
-      <div class="resource-description">{{ repo.recommendation }}</div>
-      <div class="resource-links">
-        <a class="resource-link" href="https://github.com/{{ repo.id }}" target="_blank">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
-          GitHub
-        </a>
-      </div>
-    </div>
-    {% elsif repo.id contains "rhythm.metrics" %}
-    <div class="resource-card" data-type="tool">
-      <div class="resource-header">
-        <div class="resource-title">
-          <a href="https://github.com/{{ repo.id }}" target="_blank">rhythm.metrics (R package)</a>
-        </div>
-        <span class="resource-badge badge-tool">Tool</span>
-      </div>
-      <div class="resource-meta">Cong Zhang · 2022</div>
-      <div class="resource-description">{{ repo.recommendation }} Includes ΔC/ΔV, Varco, %V, rPVI_C, nPVI_V metrics.</div>
-      <div class="resource-links">
-        <a class="resource-link" href="https://github.com/{{ repo.id }}" target="_blank">GitHub</a>
-        <a class="resource-link" href="https://osf.io/kfnzt" target="_blank">OSF</a>
-        <a class="resource-link" href="https://osf.io/q6edh/download" target="_blank">PDF</a>
-      </div>
-    </div>
-    {% elsif repo.id contains "charsiu" and repo.id contains "G2P" == false %}
-    <div class="resource-card" data-type="tool">
-      <div class="resource-header">
-        <div class="resource-title">
-          <a href="https://github.com/{{ repo.id }}" target="_blank">Charsiu Phonetic Aligner</a>
-        </div>
-        <span class="resource-badge badge-tool">Tool</span>
-      </div>
-      <div class="resource-meta">Jian Zhu, Cong Zhang, David Jurgens · 2022</div>
-      <div class="resource-description">{{ repo.recommendation }} Handles both forced alignment and textless phonetic alignment.</div>
-      <div class="resource-links">
-        <a class="resource-link" href="https://github.com/{{ repo.id }}" target="_blank">GitHub</a>
-        <a class="resource-link" href="https://arxiv.org/pdf/2110.03876" target="_blank">Paper</a>
-      </div>
-    </div>
-    {% elsif repo.id contains "CharsiuG2P" %}
-    <div class="resource-card" data-type="tool">
-      <div class="resource-header">
-        <div class="resource-title">
-          <a href="https://github.com/{{ repo.id }}" target="_blank">CharsiuG2P</a>
-        </div>
-        <span class="resource-badge badge-tool">Tool</span>
-      </div>
-      <div class="resource-meta">Jian Zhu, Cong Zhang, David Jurgens · 2022</div>
-      <div class="resource-description">{{ repo.recommendation }} Transformer-based grapheme-to-phoneme conversion.</div>
-      <div class="resource-links">
-        <a class="resource-link" href="https://github.com/{{ repo.id }}" target="_blank">GitHub</a>
-        <a class="resource-link" href="https://www.isca-speech.org/archive/pdfs/interspeech_2022/zhu22_interspeech.pdf" target="_blank">Paper</a>
-      </div>
-    </div>
-    {% endif %}
-  {% endfor %}
-
   <!-- Additional Resources (not in YAML) -->
-
   <div class="resource-card" data-type="dataset">
     <div class="resource-header">
       <div class="resource-title">
-        <a href="https://drive.google.com/drive/folders/1qI7XqtdZ5g4BpRw9xQhSekA_FKoVzIQK" target="_blank">Aligned Mandarin speech</a>
+        <a href="https://github.com/lingjzhu/CharsiuG2P/tree/main/dicts" target="_blank">CharsiuG2P dictionaries</a>
       </div>
-      <span class="resource-badge badge-dataset">Dataset</span>
+      <span class="resource-badge badge-dataset">Dictionary</span>
     </div>
-    <div class="resource-meta">Jian Zhu, Cong Zhang · 2022</div>
-    <div class="resource-description">Phone and word alignments for 1300 hours of open-source Mandarin speech (1M+ utterances).</div>
+    <div class="resource-meta">Jian Zhu, Cong Zhang, David Jurgens · 2022</div>
+    <div class="resource-description">Pronunciation dictionaries for over 100 languages, collected for the CharsiuG2P project.</div>
     <div class="resource-links">
-      <a class="resource-link" href="https://drive.google.com/drive/folders/1qI7XqtdZ5g4BpRw9xQhSekA_FKoVzIQK" target="_blank">Download</a>
+      <a class="resource-link" href="https://github.com/lingjzhu/CharsiuG2P/tree/main/dicts" target="_blank">Browse</a>
     </div>
   </div>
+
 
   <div class="resource-card" data-type="dataset">
     <div class="resource-header">
       <div class="resource-title">
         <a href="https://zenodo.org/record/5553685" target="_blank">Phonological feature mapping</a>
       </div>
-      <span class="resource-badge badge-dataset">Dataset</span>
+      <span class="resource-badge badge-dataset">Dictionary</span>
     </div>
     <div class="resource-meta">Cong Zhang, Huinan Zeng · 2021</div>
     <div class="resource-description">Feature-to-phone mapping data used to train the FeatureTTS system.</div>
