@@ -154,12 +154,8 @@ A short clip recorded at our exhibition booth at the GMIC Science Renaissance Fe
     {% for image in gmic_images %}
       {% assign image_number = image.basename | remove: "gmic_" | split: "." | first %}
       <div class="gslide {% if forloop.first %}active{% endif %}">
-        {% include figure.liquid 
-           path=image.path 
-           title="GMIC event photo {{ image_number }}" 
-           class="img-fluid" 
-           zoomable=false 
-        %}
+        {% capture image_path %}{{ image.path }}{% endcapture %}
+        {% include figure.liquid path=image_path title="GMIC event photo" class="img-fluid" zoomable=false %}
       </div>
     {% endfor %}
   </div>
