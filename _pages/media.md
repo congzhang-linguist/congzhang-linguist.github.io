@@ -1,23 +1,23 @@
 ---
 layout: page
-title: media & outreach
+title: media
 permalink: /media/
 description: Media coverage and public engagement across industry and academia.
 nav: true
 nav_order: 7
 ---
 
-This page collects media coverage of me and/or my products.
-
----
 
 ## AI Music & Singing Synthesis
 
 While working at Rokid Inc., I led an AI singing synthesis project, where we developed a singing synthesis model trained using speech data.
 
+➡️ See the related [project page](/project/sing/) for related research, presentations and publications.
+
 ### AI Music Open Platform Launch （2019）
 
-#### News items
+
+#### 📰 News items
 
 China Unicom's Wo-Music AI Music Open Platform was officially launched at the Global Mobile Internet Conference (GMIC) in Guangzhou. The event, themed "Pearl River Talks" (珠江论道), showcased AI-driven music creation technologies, including singing synthesis. The open platform was presented as an initiative to democratise AI music production and enable independent musicians to access professional-grade tools.
 
@@ -39,60 +39,46 @@ China Unicom's Wo-Music AI Music Open Platform was officially launched at the Gl
 
 A short clip recorded at our exhibition booth at the GMIC Science Renaissance Festival, showing the AI singing synthesis demo in action:
 
-<div style="margin: 1.5rem 0;">
-  <video controls style="width:100%; max-width:720px; border-radius:4px;">
-    <source src="/assets/img/media/singing_demo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+<div style="margin: 1.5rem auto; max-width: 340px;">
+  <div style="position:relative; padding-bottom:177.78%; height:0; overflow:hidden; border-radius:4px;">
+    <video controls style="position:absolute; top:0; left:0; width:100%; height:100%;">
+      <source src="/assets/img/media/singing_demo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
   <p style="font-size: 0.9em; color: #555; margin-top: 0.5rem;">Demo of the AI singing synthesis system at the GMIC Science Renaissance Festival exhibition booth, 2019.</p>
 </div>
 
 
 #### 📸 GMIC Event Photos
+<!-- GMIC Pictures Slideshow -->
+{% assign gmic_images = site.static_files | where_exp: "file", "file.path contains '/assets/img/media/gmic_'" %}
 
-<div id="gmic-carousel" class="carousel slide" data-bs-ride="carousel" style="margin: 1.5rem 0;">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#gmic-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Photo 1"></button>
-    <button type="button" data-bs-target="#gmic-carousel" data-bs-slide-to="1" aria-label="Photo 2"></button>
-    <button type="button" data-bs-target="#gmic-carousel" data-bs-slide-to="2" aria-label="Photo 3"></button>
-    <button type="button" data-bs-target="#gmic-carousel" data-bs-slide-to="3" aria-label="Photo 4"></button>
-    <button type="button" data-bs-target="#gmic-carousel" data-bs-slide-to="4" aria-label="Photo 5"></button>
-    <button type="button" data-bs-target="#gmic-carousel" data-bs-slide-to="5" aria-label="Photo 6"></button>
-    <button type="button" data-bs-target="#gmic-carousel" data-bs-slide-to="6" aria-label="Photo 7"></button>
+<div class="gslideshow">
+  <div class="gslides">
+    {% for image in gmic_images %}
+      {% assign image_number = image.basename | remove: "gmic_" | split: "." | first %}
+      <div class="gslide {% if forloop.first %}active{% endif %}">
+        {% include figure.liquid 
+           path=image.path 
+           title="GMIC event photo {{ image_number }}" 
+           class="img-fluid" 
+           zoomable=false 
+        %}
+      </div>
+    {% endfor %}
   </div>
-  <div class="carousel-inner" style="background:#f0f0f0; border-radius:4px;">
-    <div class="carousel-item active">
-      <img src="/assets/img/media/gmic_01.jpg" class="d-block w-100" alt="GMIC event photo 1" style="max-height:480px; object-fit:contain;">
-    </div>
-    <div class="carousel-item">
-      <img src="/assets/img/media/gmic_02.jpg" class="d-block w-100" alt="GMIC event photo 2" style="max-height:480px; object-fit:contain;">
-    </div>
-    <div class="carousel-item">
-      <img src="/assets/img/media/gmic_03.jpeg" class="d-block w-100" alt="GMIC event photo 3" style="max-height:480px; object-fit:contain;">
-    </div>
-    <div class="carousel-item">
-      <img src="/assets/img/media/gmic_04.jpg" class="d-block w-100" alt="GMIC event photo 4" style="max-height:480px; object-fit:contain;">
-    </div>
-    <div class="carousel-item">
-      <img src="/assets/img/media/gmic_05.jpg" class="d-block w-100" alt="GMIC event photo 5" style="max-height:480px; object-fit:contain;">
-    </div>
-    <div class="carousel-item">
-      <img src="/assets/img/media/gmic_06.png" class="d-block w-100" alt="GMIC event photo 6" style="max-height:480px; object-fit:contain;">
-    </div>
-    <div class="carousel-item">
-      <img src="/assets/img/media/gmic_07.jpeg" class="d-block w-100" alt="GMIC event photo 7" style="max-height:480px; object-fit:contain;">
-    </div>
+  
+  <button class="gbtn prev" onclick="gStep(-1, 'gmic')">&#10094;</button>
+  <button class="gbtn next" onclick="gStep(1, 'gmic')">&#10095;</button>
+  
+  <div class="gslideshow-footer">
+    <span class="gcaption" id="gCaption-gmic">
+      {% if gmic_images.size > 0 %}1 / {{ gmic_images.size }}{% endif %}
+    </span>
+    <div class="gdots" id="gDots-gmic"></div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#gmic-carousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#gmic-carousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
-
 ---
 
 ### AI Singer & Music Video
@@ -103,7 +89,6 @@ The AI singer we created was named **小若琪** (Xiǎo Ruòqí, literally "litt
   <br><span style="color:#888; font-size:0.9em;">How to use the sharing economy model to discover the next Jay Chou?</span>
 - [虚拟歌手小若琪与音乐霸牵手，一首魔性单曲《小猪猪》送给大家](https://www.163.com/dy/article/EGH6LFLA0511AKBF.html)
   <br><span style="color:#888; font-size:0.9em;">Virtual singer Xiao Ruoqi teams up with Music Master to present everyone with a catchy single, "Little Pig."</span> [[Alternative link 1]](http://www.sohu.com/a/317799318_247408) [[Alternative link 2]](https://read01.com/L25aOBx.html)
-
 - [福星高照朱小八》发布《小猪猪》官方推广曲 AI歌手小若琪首秀大银幕](https://www.sohu.com/a/338416484_745022)
   <br><span style="color:#888; font-size:0.9em;">The film "Lucky Star Zhu Xiaoba" releases the official promotional song "Little Pig," featuring AI singer Xiao Ruoqi making her big-screen debut</span>
 
@@ -115,7 +100,7 @@ The AI singer we created was named **小若琪** (Xiǎo Ruòqí, literally "litt
   <p style="margin: 0 0 0.5rem; color: #555; font-style: italic;">
     "When we first started working on AI singing, there was no reference to speak of — the engineers had to feel their way forward through experiment after experiment. To communicate with the music producers, the engineers also had to pick up a lot of musical knowledge from scratch: reading sheet music, understanding rhythm and notes, mapping lyrics to scores, converting beats to time. After many rounds of revising the computational models, we finally improved our TTS singing method. In the near future, it will be possible to automatically generate an AI singing demo simply by inputting lyrics and a score."
   </p>
-  <p style="margin: 0; font-size: 0.9em; color: #888;">— Dr. Cong Zhang, Rokid TTS Lead (2019)</p>
+  <p style="margin: 0; font-size: 0.9em; color: #888;">— Dr. Cong Zhang, Rokid TTS (AI music) Lead (2019)</p>
 </div>
 
 
@@ -146,64 +131,35 @@ My gamification research has attracted public interest and media coverage in the
 
 ---
 
+
+
 ### 📰 News Coverage
-
-<div class="media-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e0e0e0;">
-  <strong>BBC</strong> &mdash;
-  <a href="https://www.bbc.co.uk/news/articles/crezw2zx138o" target="_blank">Can you tell North East accents apart?</a>
+<div class="media-grid">
+  <a class="media-item" href="https://www.bbc.co.uk/news/articles/crezw2zx138o" target="_blank">
+    <span class="media-outlet">BBC</span>
+    <span class="media-headline">Can you tell North East accents apart?</span>
+    <span class="media-arrow">&#8599;</span>
+  </a>
+  <a class="media-item" href="https://www.mirror.co.uk/news/uk-news/geordie-accent-studied-newcastle-university-34004194" target="_blank">
+    <span class="media-outlet">Mirror</span>
+    <span class="media-headline">Geordie accent to be studied at Newcastle University in 'celebration of diversity'</span>
+    <span class="media-arrow">&#8599;</span>
+  </a>
+  <a class="media-item" href="https://www.chroniclelive.co.uk/news/north-east-news/wey-aye-man-newcastle-university-30246657" target="_blank">
+    <span class="media-outlet">Chronicle</span>
+    <span class="media-headline">'Wey aye, man' — Newcastle University running event exploring North East dialects</span>
+    <span class="media-arrow">&#8599;</span>
+  </a>
 </div>
-
-<div class="media-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e0e0e0;">
-  <strong>Mirror</strong> &mdash;
-  <a href="https://www.mirror.co.uk/news/uk-news/geordie-accent-studied-newcastle-university-34004194" target="_blank">Geordie accent to be studied at Newcastle University in 'celebration of diversity'</a>
-</div>
-
-<div class="media-item" style="margin-bottom: 1.5rem;">
-  <strong>Chronicle Live</strong> &mdash;
-  <a href="https://www.chroniclelive.co.uk/news/north-east-news/wey-aye-man-newcastle-university-30246657" target="_blank">'Wey aye, man' — Newcastle University running event exploring North East dialects</a>
-</div>
-
-
-
-<div id="gamification-carousel" class="carousel slide" data-bs-ride="carousel" style="margin: 1.5rem 0;">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#gamification-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Photo 1"></button>
-    <button type="button" data-bs-target="#gamification-carousel" data-bs-slide-to="1" aria-label="Photo 2"></button>
-    <button type="button" data-bs-target="#gamification-carousel" data-bs-slide-to="2" aria-label="Photo 3"></button>
-    <!-- <button type="button" data-bs-target="#gamification-carousel" data-bs-slide-to="3" aria-label="Photo 4"></button>
-    <button type="button" data-bs-target="#gamification-carousel" data-bs-slide-to="4" aria-label="Photo 5"></button>
-    <button type="button" data-bs-target="#gamification-carousel" data-bs-slide-to="5" aria-label="Photo 6"></button>
-    <button type="button" data-bs-target="#gamification-carousel" data-bs-slide-to="6" aria-label="Photo 7"></button> -->
+  
+  <div class="gslideshow">
+  <div class="gslides">
+    <div class="gslide active">{% include figure.liquid path="/assets/img/media/gamification_chronicle.jpg" title=Chronicle in print" class="img-fluid" zoomable=false %}</div>
+    <div class="gslide">{% include figure.liquid path="/assets/img/media/gamification_mirror.jpg" title="Mirror in print" class="img-fluid" zoomable=false %}</div>
   </div>
-  <div class="carousel-inner" style="background:#f0f0f0; border-radius:4px;">
-    <div class="carousel-item active">
-      <img src="/assets/img/media/gamification_mirror.jpg" class="d-block w-100" alt="Newspaper clipping 1" style="max-height:480px; object-fit:contain;">
-    </div>
-    <div class="carousel-item">
-      <img src="/assets/img/media/gamification_chronicle.jpg" class="d-block w-100" alt="Newspaper clipping 2" style="max-height:480px; object-fit:contain;">
-    </div>
-    <!-- <div class="carousel-item">
-      <img src="/assets/img/media/gamification_.jpg" class="d-block w-100" alt="Newspaper clipping 3" style="max-height:480px; object-fit:contain;">
-    </div>
-    <div class="carousel-item">
-      <img src="/assets/img/media/newspaper_04.jpg" class="d-block w-100" alt="Newspaper clipping 4" style="max-height:480px; object-fit:contain;">
-    </div>
-    <div class="carousel-item">
-      <img src="/assets/img/media/newspaper_05.jpg" class="d-block w-100" alt="Newspaper clipping 5" style="max-height:480px; object-fit:contain;">
-    </div>
-    <div class="carousel-item">
-      <img src="/assets/img/media/newspaper_06.jpg" class="d-block w-100" alt="Newspaper clipping 6" style="max-height:480px; object-fit:contain;">
-    </div>
-    <div class="carousel-item">
-      <img src="/assets/img/media/newspaper_07.jpg" class="d-block w-100" alt="Newspaper clipping 7" style="max-height:480px; object-fit:contain;">
-    </div>
-  </div> -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#gamification-carousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#gamification-carousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+  <button class="gbtn prev" onclick="gStep(-1, 'game')">&#10094;</button>
+  <button class="gbtn next" onclick="gStep(1, 'game')">&#10095;</button>
+  <div class="gslideshow-footer">
+    <span class="gcaption" id="gCaption-game">1 / 9</span>
+    <div class="gdots" id="gDots-game"></div>
+  </div>
