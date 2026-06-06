@@ -7,6 +7,101 @@ nav: true
 nav_order: 7
 ---
 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+/* ─── SLIDESHOW ─────────────────────────────────────────────────────────── */
+.gslideshow {
+  position: relative;
+  margin: 2rem 0;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  background: #f5f5f5;
+}
+.gslides { position: relative; height: 360px; }
+.gslide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+.gslide.active { opacity: 1; }
+.gslide img { width: 100%; height: 360px; object-fit: cover; display: block; }
+.gslide figure { margin: 0; height: 100%; }
+.gslide figure img { height: 360px; object-fit: cover; border-radius: 0; }
+.gbtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+.gbtn:hover { background: rgba(0,0,0,0.65); }
+.gbtn.prev { left: 10px; }
+.gbtn.next { right: 10px; }
+.gslideshow-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-top: 1px solid #eee;
+  background: #fafafa;
+}
+.gslideshow-footer .gcaption { font-size: 12px; color: #999; font-style: italic; }
+.gdots { display: flex; gap: 5px; align-items: center; }
+.gdot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.gdot.active { background: #1D9E75; transform: scale(1.3); }
+
+/* ─── MEDIA GRID ─────────────────────────────────────────────────────────── */
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+.media-grid { display: flex; flex-direction: column; gap: 8px; margin-bottom: 1.5rem; }
+.media-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  text-decoration: none;
+  transition: border-color 0.15s, background 0.15s;
+}
+.media-item:hover { border-color: #1D9E75; background: #f9fdfb; }
+.media-outlet {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #999;
+  min-width: 64px;
+  flex-shrink: 0;
+}
+.media-headline { font-size: 13px; color: #333; line-height: 1.45; flex: 1; }
+.media-arrow { font-size: 13px; color: #bbb; flex-shrink: 0; }
+
+/* ─── MISC ───────────────────────────────────────────────────────────────── */
+.section-divider { border: none; border-top: 1px solid #eee; margin: 2.5rem 0; }
+
+</style>
 
 ## AI Music & Singing Synthesis
 
@@ -163,3 +258,40 @@ My gamification research has attracted public interest and media coverage in the
     <span class="gcaption" id="gCaption-game">1 / 9</span>
     <div class="gdots" id="gDots-game"></div>
   </div>
+
+
+<script>
+(function(){
+  var cur = 0;
+  var slides = document.querySelectorAll('.gslide');
+  var dotsEl = document.getElementById('gDots');
+  var caption = document.getElementById('gCaption');
+  var total = slides.length;
+  var timer;
+
+  slides.forEach(function(_, i){
+    var d = document.createElement('span');
+    d.className = 'gdot' + (i === 0 ? ' active' : '');
+    d.onclick = function(){ goTo(i); reset(); };
+    dotsEl.appendChild(d);
+  });
+
+  function goTo(n){
+    slides[cur].classList.remove('active');
+    dotsEl.children[cur].classList.remove('active');
+    cur = (n + total) % total;
+    slides[cur].classList.add('active');
+    dotsEl.children[cur].classList.add('active');
+    caption.textContent = (cur + 1) + ' / ' + total;
+  }
+
+  window.gStep = function(dir){ goTo(cur + dir); reset(); };
+
+  function reset(){
+    clearInterval(timer);
+    timer = setInterval(function(){ goTo(cur + 1); }, 4000);
+  }
+
+  reset();
+})();
+</script>
