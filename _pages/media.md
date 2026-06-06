@@ -206,10 +206,10 @@ While working at Rokid Inc., I led an AI singing synthesis project, where we dev
 ➡️ See the related [project page](/project/sing/) for related research, presentations and publications.
 
 
-### AI Music Open Platform Launch
+### *AI Music Open Platform Launch*
 
 
-#### 📰 News items
+📰 **News items**
 
 China Unicom's Wo-Music AI Music Open Platform was officially launched at the Global Mobile Internet Conference (GMIC) in Guangzhou. The event, themed "Pearl River Talks" (珠江论道), showcased AI-driven music creation technologies, including singing synthesis. The open platform was presented as an initiative to democratise AI music production and enable independent musicians to access professional-grade tools.
 
@@ -227,7 +227,7 @@ China Unicom's Wo-Music AI Music Open Platform was officially launched at the Gl
   <br><span style="color:#888; font-size:0.9em;">Pearl River Talks Presents at GMIC; China Unicom Wo-Music AI Music Open Platform Launched</span>
 
 
-#### 🎬 Exhibition Demo at GMIC Science Renaissance Festival
+🎬 **Exhibition Demo at GMIC Science Renaissance Festival**
 
 A short clip recorded at our exhibition booth at the GMIC Science Renaissance Festival, showing the AI singing synthesis demo in action:
 
@@ -242,7 +242,7 @@ A short clip recorded at our exhibition booth at the GMIC Science Renaissance Fe
 </div>
 
 
-#### 📸 GMIC Event Photos
+📸 **GMIC Event Photos**
 <!-- GMIC Pictures Slideshow -->
 {% assign gmic_images = site.static_files | where_exp: "file", "file.path contains '/assets/img/media/gmic_'" %}
 
@@ -275,10 +275,10 @@ A short clip recorded at our exhibition booth at the GMIC Science Renaissance Fe
 </div>
 ---
 
-### AI Singer & Music Video
+### *AI Singer & Music Video*
 The AI singer we created was named **小若琪** (Xiǎo Ruòqí, literally "little Rokid"). A song performed by Xiao Ruoqi — *小猪猪* (*Xiǎo Zhūzhū*, "Little Piggy") — was used as the promotional song for the children's film *Lucky Star* (《福星高照朱小八》).
 
-#### 📰 News items
+📰 **News items**
 - [如何借助共享经济模式，发掘下一个周杰伦？](https://www.musicbravo.com.my/Mobile/Home/Column/86ce4378-c72b-4609-8464-c05937cda7d3)
   <br><span style="color:#888; font-size:0.9em;">How to use the sharing economy model to discover the next Jay Chou?</span>
 - [虚拟歌手小若琪与音乐霸牵手，一首魔性单曲《小猪猪》送给大家](https://www.163.com/dy/article/EGH6LFLA0511AKBF.html)
@@ -298,7 +298,7 @@ The AI singer we created was named **小若琪** (Xiǎo Ruòqí, literally "litt
 </div>
 
 
-#### 🎵 Music Video
+🎵 **Music Video**
 
 The AI singer Xiao Ruoqi performing *小猪猪* (*Xiǎo Zhūzhū*, "Little Piggy"), promotional song for the film *Lucky Star* (《福星高照朱小八》):
 
@@ -316,6 +316,7 @@ Alternative link (Bilibili): [bilibili.com/s/video/BV1XU4y1771A](https://www.bil
 
 
 ---
+---
 
 ## **North East Accents & Gamification Project （2024）**
 
@@ -323,11 +324,9 @@ My gamification research has attracted public interest and media coverage in the
 
 ➡️ See the full [project page](/project/gamification/) for research background, the game, and publications.
 
----
 
 
-
-### 📰 News items
+📰 **News items**
 <div class="media-grid">
   <a class="media-item" href="https://www.bbc.co.uk/news/articles/crezw2zx138o" target="_blank">
     <span class="media-outlet">BBC</span>
