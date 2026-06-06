@@ -11,41 +11,121 @@ nav_order: 7
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap');
 
 /* ─── SLIDESHOW ─────────────────────────────────────────────────────────── */
+/* ─── SLIDESHOW WITH BLURRED BACKGROUND ─────────────────────────────────── */
 .gslideshow {
   position: relative;
   margin: 2rem 0;
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid #eee;
-  background: #f5f5f5;
+  background: #f0f0f0;
 }
-.gslides { position: relative; height: 360px; }
+
+.gslides {
+  position: relative;
+  height: 480px; /* Adjust this height as needed */
+  background: #1a1a1a;
+}
+
 .gslide {
   position: absolute;
   inset: 0;
   opacity: 0;
   transition: opacity 0.7s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1a1a1a;
 }
-.gslide.active { opacity: 1; }
-.gslide img { width: 100%; height: 360px; object-fit: cover; display: block; }
-.gslide figure { margin: 0; height: 100%; }
-.gslide figure img { height: 360px; object-fit: cover; border-radius: 0; }
+
+.gslide.active {
+  opacity: 1;
+}
+
+/* Container for the image and blur effect */
+.gslide-image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Blurred background layer */
+.gslide-blur-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px);
+  transform: scale(1.1); /* Prevents edge artifacts from blur */
+  opacity: 0.7;
+}
+
+/* Main image layer - maintains original ratio */
+.gslide-main-img {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  z-index: 2;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  border-radius: 4px;
+}
+
+/* Alternative: If using figure.liquid, override its styles */
+.gslide figure {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #1a1a1a;
+}
+
+.gslide figure img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+}
+
+/* Navigation buttons stay on top */
 .gbtn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.5);
   color: #fff;
   border: none;
-  border-radius: 4px;
-  padding: 8px 14px;
-  font-size: 1rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
   cursor: pointer;
   z-index: 10;
+  transition: all 0.3s ease;
 }
-.gbtn:hover { background: rgba(0,0,0,0.65); }
-.gbtn.prev { left: 10px; }
-.gbtn.next { right: 10px; }
+
+.gbtn:hover {
+  background: rgba(0,0,0,0.8);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.gbtn.prev { left: 20px; }
+.gbtn.next { right: 20px; }
+
 .gslideshow-footer {
   display: flex;
   align-items: center;
@@ -54,16 +134,32 @@ nav_order: 7
   border-top: 1px solid #eee;
   background: #fafafa;
 }
-.gslideshow-footer .gcaption { font-size: 12px; color: #999; font-style: italic; }
-.gdots { display: flex; gap: 5px; align-items: center; }
+
+.gslideshow-footer .gcaption {
+  font-size: 12px;
+  color: #999;
+  font-style: italic;
+}
+
+.gdots {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
 .gdot {
-  width: 7px; height: 7px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background: #ccc;
   cursor: pointer;
   transition: background 0.2s, transform 0.2s;
 }
-.gdot.active { background: #1D9E75; transform: scale(1.3); }
+
+.gdot.active {
+  background: #1D9E75;
+  transform: scale(1.3);
+}
 
 /* ─── MEDIA GRID ─────────────────────────────────────────────────────────── */
 .section-label {
@@ -103,13 +199,14 @@ nav_order: 7
 
 </style>
 
-## AI Music & Singing Synthesis
+## **AI Music & Singing Synthesis （2019）**
 
 While working at Rokid Inc., I led an AI singing synthesis project, where we developed a singing synthesis model trained using speech data.
 
 ➡️ See the related [project page](/project/sing/) for related research, presentations and publications.
 
-### AI Music Open Platform Launch （2019）
+
+### AI Music Open Platform Launch
 
 
 #### 📰 News items
@@ -154,7 +251,14 @@ A short clip recorded at our exhibition booth at the GMIC Science Renaissance Fe
     {% for image in gmic_images %}
       {% assign image_number = image.basename | remove: "gmic_" | split: "." | first %}
       <div class="gslide {% if forloop.first %}active{% endif %}">
-        <img src="{{ image.path }}" alt="GMIC event photo {{ image_number }}" class="img-fluid" style="width:100%; height:360px; object-fit:cover;">
+        <div class="gslide-image-container">
+          <!-- Blurred background -->
+          <div class="gslide-blur-bg" style="background-image: url('{{ image.path }}');"></div>
+          <!-- Main image -->
+          <img src="{{ image.path }}" 
+               alt="GMIC event photo {{ image_number }}" 
+               class="gslide-main-img">
+        </div>
       </div>
     {% endfor %}
   </div>
@@ -174,7 +278,7 @@ A short clip recorded at our exhibition booth at the GMIC Science Renaissance Fe
 ### AI Singer & Music Video
 The AI singer we created was named **小若琪** (Xiǎo Ruòqí, literally "little Rokid"). A song performed by Xiao Ruoqi — *小猪猪* (*Xiǎo Zhūzhū*, "Little Piggy") — was used as the promotional song for the children's film *Lucky Star* (《福星高照朱小八》).
 
-#### News coverage
+#### 📰 News items
 - [如何借助共享经济模式，发掘下一个周杰伦？](https://www.musicbravo.com.my/Mobile/Home/Column/86ce4378-c72b-4609-8464-c05937cda7d3)
   <br><span style="color:#888; font-size:0.9em;">How to use the sharing economy model to discover the next Jay Chou?</span>
 - [虚拟歌手小若琪与音乐霸牵手，一首魔性单曲《小猪猪》送给大家](https://www.163.com/dy/article/EGH6LFLA0511AKBF.html)
@@ -213,7 +317,7 @@ Alternative link (Bilibili): [bilibili.com/s/video/BV1XU4y1771A](https://www.bil
 
 ---
 
-## North East Accents & Gamification Project （2024）
+## **North East Accents & Gamification Project （2024）**
 
 My gamification research has attracted public interest and media coverage in the UK, particularly for events exploring North East English accents.
 
@@ -223,7 +327,7 @@ My gamification research has attracted public interest and media coverage in the
 
 
 
-### 📰 News Coverage
+### 📰 News items
 <div class="media-grid">
   <a class="media-item" href="https://www.bbc.co.uk/news/articles/crezw2zx138o" target="_blank">
     <span class="media-outlet">BBC</span>
@@ -244,8 +348,18 @@ My gamification research has attracted public interest and media coverage in the
   
   <div class="gslideshow" id="game-slideshow">
   <div class="gslides">
-    <div class="gslide active">{% include figure.liquid path="/assets/img/media/gamification_chronicle.jpg" title="Chronicle in print" class="img-fluid" zoomable=false %}</div>
-    <div class="gslide">{% include figure.liquid path="/assets/img/media/gamification_mirror.jpg" title="Mirror in print" class="img-fluid" zoomable=false %}</div>
+    <div class="gslide active">
+      <div class="gslide-image-container">
+        <div class="gslide-blur-bg" style="background-image: url('/assets/img/media/gamification_chronicle.jpg');"></div>
+        {% include figure.liquid path="/assets/img/media/gamification_chronicle.jpg" title="Chronicle in print" class="gslide-main-img" zoomable=false %}
+      </div>
+    </div>
+    <div class="gslide">
+      <div class="gslide-image-container">
+        <div class="gslide-blur-bg" style="background-image: url('/assets/img/media/gamification_mirror.jpg');"></div>
+        {% include figure.liquid path="/assets/img/media/gamification_mirror.jpg" title="Mirror in print" class="gslide-main-img" zoomable=false %}
+      </div>
+    </div>
   </div>
   <button class="gbtn prev" onclick="gStep(-1, 'game')">&#10094;</button>
   <button class="gbtn next" onclick="gStep(1, 'game')">&#10095;</button>
