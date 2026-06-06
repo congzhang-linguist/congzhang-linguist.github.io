@@ -204,9 +204,9 @@ nav_order: 7
 While working at Rokid Inc., I led an AI singing synthesis project, where we developed a singing synthesis model trained using speech data.
 
 ➡️ See the related [project page](/project/sing/) for related research, presentations and publications.
+<br>
 
-
-### *AI Music Open Platform Launch*
+#### AI Music Open Platform Launch
 
 
 📰 **News items**
@@ -273,9 +273,9 @@ A short clip recorded at our exhibition booth at the GMIC Science Renaissance Fe
     <div class="gdots" id="gDots-gmic"></div>
   </div>
 </div>
----
 
-### *AI Singer & Music Video*
+
+#### AI Singer & Music Video
 The AI singer we created was named **小若琪** (Xiǎo Ruòqí, literally "little Rokid"). A song performed by Xiao Ruoqi — *小猪猪* (*Xiǎo Zhūzhū*, "Little Piggy") — was used as the promotional song for the children's film *Lucky Star* (《福星高照朱小八》).
 
 📰 **News items**
@@ -315,7 +315,6 @@ The AI singer Xiao Ruoqi performing *小猪猪* (*Xiǎo Zhūzhū*, "Little Piggy
 Alternative link (Bilibili): [bilibili.com/s/video/BV1XU4y1771A](https://www.bilibili.com/s/video/BV1XU4y1771A)
 
 
----
 ---
 
 ## **North East Accents & Gamification Project （2024）**
