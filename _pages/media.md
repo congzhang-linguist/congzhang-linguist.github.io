@@ -149,13 +149,12 @@ A short clip recorded at our exhibition booth at the GMIC Science Renaissance Fe
 <!-- GMIC Pictures Slideshow -->
 {% assign gmic_images = site.static_files | where_exp: "file", "file.path contains '/assets/img/media/gmic_'" %}
 
-<div class="gslideshow">
+<div class="gslideshow" id="gmic-slideshow">
   <div class="gslides">
     {% for image in gmic_images %}
       {% assign image_number = image.basename | remove: "gmic_" | split: "." | first %}
       <div class="gslide {% if forloop.first %}active{% endif %}">
-        {% capture image_path %}{{ image.path }}{% endcapture %}
-        {% include figure.liquid path=image_path title="GMIC event photo" class="img-fluid" zoomable=false %}
+        <img src="{{ image.path }}" alt="GMIC event photo {{ image_number }}" class="img-fluid" style="width:100%; height:360px; object-fit:cover;">
       </div>
     {% endfor %}
   </div>
@@ -243,7 +242,7 @@ My gamification research has attracted public interest and media coverage in the
   </a>
 </div>
   
-  <div class="gslideshow">
+  <div class="gslideshow" id="game-slideshow">
   <div class="gslides">
     <div class="gslide active">{% include figure.liquid path="/assets/img/media/gamification_chronicle.jpg" title="Chronicle in print" class="img-fluid" zoomable=false %}</div>
     <div class="gslide">{% include figure.liquid path="/assets/img/media/gamification_mirror.jpg" title="Mirror in print" class="img-fluid" zoomable=false %}</div>
@@ -251,43 +250,94 @@ My gamification research has attracted public interest and media coverage in the
   <button class="gbtn prev" onclick="gStep(-1, 'game')">&#10094;</button>
   <button class="gbtn next" onclick="gStep(1, 'game')">&#10095;</button>
   <div class="gslideshow-footer">
-    <span class="gcaption" id="gCaption-game">1 / 9</span>
+    <span class="gcaption" id="gCaption-game">1 / 2</span>
     <div class="gdots" id="gDots-game"></div>
   </div>
+</div>
 
 
 <script>
+// Slideshow 1: Game slideshow
 (function(){
   var cur = 0;
-  var slides = document.querySelectorAll('.gslide');
-  var dotsEl = document.getElementById('gDots');
-  var caption = document.getElementById('gCaption');
+  var slides = document.querySelectorAll('#game-slideshow .gslide');
+  var dotsEl = document.getElementById('gDots-game');
+  var caption = document.getElementById('gCaption-game');
   var total = slides.length;
   var timer;
 
-  slides.forEach(function(_, i){
-    var d = document.createElement('span');
-    d.className = 'gdot' + (i === 0 ? ' active' : '');
-    d.onclick = function(){ goTo(i); reset(); };
-    dotsEl.appendChild(d);
-  });
+  if (slides.length > 0 && dotsEl && caption) {
+    slides.forEach(function(_, i){
+      var d = document.createElement('span');
+      d.className = 'gdot' + (i === 0 ? ' active' : '');
+      d.onclick = function(){ goTo(i); reset(); };
+      dotsEl.appendChild(d);
+    });
 
-  function goTo(n){
-    slides[cur].classList.remove('active');
-    dotsEl.children[cur].classList.remove('active');
-    cur = (n + total) % total;
-    slides[cur].classList.add('active');
-    dotsEl.children[cur].classList.add('active');
-    caption.textContent = (cur + 1) + ' / ' + total;
+    function goTo(n){
+      slides[cur].classList.remove('active');
+      dotsEl.children[cur].classList.remove('active');
+      cur = (n + total) % total;
+      slides[cur].classList.add('active');
+      dotsEl.children[cur].classList.add('active');
+      caption.textContent = (cur + 1) + ' / ' + total;
+    }
+
+    window.gStep = function(dir, slideshowId){
+      if (slideshowId === 'game') {
+        goTo(cur + dir);
+        reset();
+      }
+    };
+
+    function reset(){
+      if (timer) clearInterval(timer);
+      timer = setInterval(function(){ goTo(cur + 1); }, 4000);
+    }
+
+    reset();
   }
+})();
 
-  window.gStep = function(dir){ goTo(cur + dir); reset(); };
+// Slideshow 2: GMIC slideshow
+(function(){
+  var cur = 0;
+  var slides = document.querySelectorAll('#gmic-slideshow .gslide');
+  var dotsEl = document.getElementById('gDots-gmic');
+  var caption = document.getElementById('gCaption-gmic');
+  var total = slides.length;
+  var timer;
 
-  function reset(){
-    clearInterval(timer);
-    timer = setInterval(function(){ goTo(cur + 1); }, 4000);
+  if (slides.length > 0 && dotsEl && caption) {
+    slides.forEach(function(_, i){
+      var d = document.createElement('span');
+      d.className = 'gdot' + (i === 0 ? ' active' : '');
+      d.onclick = function(){ goTo(i); reset(); };
+      dotsEl.appendChild(d);
+    });
+
+    function goTo(n){
+      slides[cur].classList.remove('active');
+      dotsEl.children[cur].classList.remove('active');
+      cur = (n + total) % total;
+      slides[cur].classList.add('active');
+      dotsEl.children[cur].classList.add('active');
+      caption.textContent = (cur + 1) + ' / ' + total;
+    }
+
+    window.gStep = function(dir, slideshowId){
+      if (slideshowId === 'gmic') {
+        goTo(cur + dir);
+        reset();
+      }
+    };
+
+    function reset(){
+      if (timer) clearInterval(timer);
+      timer = setInterval(function(){ goTo(cur + 1); }, 4000);
+    }
+
+    reset();
   }
-
-  reset();
 })();
 </script>
