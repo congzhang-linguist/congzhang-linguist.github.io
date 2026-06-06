@@ -249,7 +249,7 @@ My gamification research has attracted public interest and media coverage in the
   
   <div class="gslideshow">
   <div class="gslides">
-    <div class="gslide active">{% include figure.liquid path="/assets/img/media/gamification_chronicle.jpg" title=Chronicle in print" class="img-fluid" zoomable=false %}</div>
+    <div class="gslide active">{% include figure.liquid path="/assets/img/media/gamification_chronicle.jpg" title="Chronicle in print" class="img-fluid" zoomable=false %}</div>
     <div class="gslide">{% include figure.liquid path="/assets/img/media/gamification_mirror.jpg" title="Mirror in print" class="img-fluid" zoomable=false %}</div>
   </div>
   <button class="gbtn prev" onclick="gStep(-1, 'game')">&#10094;</button>
