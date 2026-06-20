@@ -10,6 +10,11 @@ profile:
   image_circular: False # crops the image to make it circular
   address: >
     <p>张聪</p>
+    <p>
+    <a href="/assets/audio/zhang-cong.mp3" target="_blank">🔊 Mandarin (张聪)</a>
+    &nbsp;·&nbsp;
+    <a href="/assets/audio/cong-zhang.mp3" target="_blank">🔊 English (Cong Zhang)</a>
+    </p>
     <p>Lecturer in Phonetics and Phonology</p>
     <p>Newcastle University</p>
 
@@ -20,27 +25,21 @@ social: true  # includes social icons at the bottom of the page
 cv: true
 ---
 
-Hi! I’m Cong Zhang ([tsʰʊŋ tʃɑŋ], each with a high-level tone (tone number 55, [more about my name](https://congzhang-linguist.github.io/blog/2023/my-name/)). I am a Lecturer in Phonetics and Phonology at the [School of Education, Communication and Language Sciences](http://ncl.ac.uk/ecls/), Newcastle University, UK.
 
-I am a speech scientist (or phonetician/laboratory phonologist) specialising in speech prosody, with experience in speech technology and clinical speech research.
+Hello! My name Cong Zhang ([tsʰʊŋ˥ tʃɑŋ˥], [more about my name](https://congzhang-linguist.github.io/blog/2023/my-name/)). I am a Lecturer in Phonetics and Phonology at the [School of Education, Communication and Language Sciences](http://ncl.ac.uk/ecls/), Newcastle University, UK.
 
-I study speech prosody from both phonetic and phonological perspectives, using a range of approaches including computational and psycholinguistic methods. My research focuses on word- and sentence-level prosodic interactions, including tone-intonation interaction and boundary-related intonational phenomena across languages. I place particular emphasis on under-documented languages and regional accents. 
+I am a speech scientist (or prosodist/phonetician/laboratory phonologist) specialising in **speech prosody**, with experience in **speech technology** and **clinical speech** research.
 
-Increasingly, I work at the interface of speech science, AI and Healthcare, exploring how prosodic and other phonetic features can support automatic classifications in real-world applications.
+I study speech prosody from both phonetic and phonological perspectives, using a range of approaches including computational and psycholinguistic methods. I am particularly interested in how different layers of prosody interact, from lexical tone and postlexical intonation to the interplay between linguistic and paralinguistic meaning. I also study boundary-related phenomena and prosodic variation across languages and accents, especially in under-documented languages and regional varieties. Alongside theoretical questions, I am interested in developing methods for data collection, analysis, and modelling.
 
-I previously worked in speech technology (text-to-speech), where I led an AI singing project, managed speech data collection and annotation, and provided linguistic and phonological input to TTS algorithms and evaluation pipelines. 
+More recently, I have been working at the intersection of speech science, AI, and healthcare, exploring how prosodic and other phonetic features can support automatic speech analysis and classification in real-world applications.
+
+My work is shaped by experiences across several different ways of thinking about language. I began in Translation and Interpreting at [Beijing Foreign Studies University](https://www.bfsu.edu.cn/), where language was primarily a tool for communication in real-world contexts. I then moved into linguistics and language acquisition at Newcastle University, becoming increasingly interested in how language is learned and represented. During my DPhil at the [University of Oxford](http://brainlab.clp.ox.ac.uk/), I focused on more theoretical questions in laboratory phonology, investigating intonational tunes in Tianjin Mandarin ([link to my DPhil thesis](https://ora.ox.ac.uk/objects/uuid:3149a35c-e6c2-4f43-a41a-bdc08ebf08f6)).
+
+After Oxford, I moved in the opposite direction, applying linguistic knowledge in industry through work on speech technology (text-to-speech), where I led an AI singing project, managed speech data collection and annotation, and provided linguistic and phonological input to TTS algorithms and evaluation pipelines. I later returned to academia as part of the ERC-funded [SPRINT](https://cordis.europa.eu/project/id/835263/) project, where I continued investigating fundamental questions about speech prosody in interaction. Today, my research increasingly brings these strands together, combining theoretical insights from phonetics and phonology with applications in speech technology, AI, and healthcare.
 
 Across academia and industry, I am particularly interested in bridging theory, data, and application, and in shaping research directions that make speech science usable beyond the lab.
 
-
------
-I received my DPhil degree from the [Language and Brain Lab](http://brainlab.clp.ox.ac.uk/), University of Oxford. My DPhil thesis, supervised by Professor Aditi Lahiri, was about the intonational tunes in a tonal language — Tianjin Mandarin ([More about my DPhil project](https://ora.ox.ac.uk/objects/uuid:3149a35c-e6c2-4f43-a41a-bdc08ebf08f6)).
-
-I did my Master’s in Linguistics and Language Acquisition from the [School of English Literature, Language and Linguistics](https://www.ncl.ac.uk/elll/), Newcastle University (UK). There, I worked on a number of projects including child language acquisition, second language acquisition, Mandarin lexical tone perception, etc.
-
-For my undergraduate degree, I studied Translation and Interpreting at [Beijing Foreign Studies University](https://www.bfsu.edu.cn/) (China). I am therefore also interested in studies about translation and interpreting.
-
-Following my DPhil, I worked as a TTS linguist (Linguistics Engineer) in A-Lab at Rokid Inc. One of my major projects was Singing Synthesis (text-to-singing). After this, I came back to academia and worked on the ERC project [SPRINT](https://sprintproject.io/) (i.e. Speech Prosody in Interaction: The form and function of intonation in human communication, ERC-ADG-835263 ) and further looked into the aspects of English and Greek intonation in speech production.
 
 <div class="cv">
 
