@@ -43,3 +43,20 @@ Across academia and industry, I am particularly interested in bridging theory, d
 <div class="cv">
 
 </div>
+
+<script>
+document.querySelectorAll('.pron-play-btn').forEach(btn => {
+  const audio = new Audio(btn.dataset.audio);
+  const icon = btn.querySelector('i');
+  btn.onclick = () => {
+    audio.currentTime = 0;
+    audio.play();
+    icon.className = 'fas fa-pause';
+    btn.classList.add('playing');
+    audio.onended = () => {
+      icon.className = 'fas fa-play';
+      btn.classList.remove('playing');
+    };
+  };
+});
+</script>
