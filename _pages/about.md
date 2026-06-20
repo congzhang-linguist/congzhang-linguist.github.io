@@ -25,7 +25,7 @@ cv: true
 ---
 
 
-Hello! My name Cong Zhang ([tsʰʊŋ˥ tʃɑŋ˥] <button class="pron-play-btn" data-audio="/assets/audio/congzhang.wav" aria-label="Play English pronunciation"><i class="fas fa-play"></i></button> or <button class="pron-play-btn" data-audio="/assets/audio/congzhang.wav" aria-label="Play English pronunciation"><i class="fas fa-play"></i></button>, <button class="pron-play-btn" data-audio="/assets/audio/congzhang.wav" aria-label="Play English pronunciation"><i class="fas fa-play"></i></button>[more about my name](https://congzhang-linguist.github.io/blog/2023/my-name/)). I am a Lecturer in Phonetics and Phonology at the [School of Education, Communication and Language Sciences](http://ncl.ac.uk/ecls/), Newcastle University, UK.
+Hello! My name Cong Zhang ([tsʰʊŋ˥ tʃɑŋ˥], *Mandarin*: <button class="pron-play-btn" data-audio="/assets/audio/zhangcong.wav" aria-label="Play Mandarin pronunciation"><i class="fas fa-play"></i></button> or *English*: <button class="pron-play-btn" data-audio="/assets/audio/congzhang.wav" aria-label="Play English pronunciation"><i class="fas fa-play"></i></button>, [more about my name](https://congzhang-linguist.github.io/blog/2023/my-name/)). I am a Lecturer in Phonetics and Phonology at the [School of Education, Communication and Language Sciences](http://ncl.ac.uk/ecls/), Newcastle University, UK.
 
 I am a speech scientist (or prosodist/phonetician/laboratory phonologist) specialising in **speech prosody**, with experience in **speech technology** and **clinical speech** research.
 
@@ -43,20 +43,3 @@ Across academia and industry, I am particularly interested in bridging theory, d
 <div class="cv">
 
 </div>
-
-<script>
-document.querySelectorAll('.pron-play-btn').forEach(btn => {
-  const audio = new Audio(btn.dataset.audio);
-  const icon = btn.querySelector('i');
-  btn.onclick = () => {
-    audio.currentTime = 0;
-    audio.play();
-    icon.className = 'fas fa-pause';
-    btn.classList.add('playing');
-    audio.onended = () => {
-      icon.className = 'fas fa-play';
-      btn.classList.remove('playing');
-    };
-  };
-});
-</script>
