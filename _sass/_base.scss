@@ -704,3 +704,36 @@ html.transition *:after {
   margin-right: auto;
   width: 50%;
 }
+
+.pron-play-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin: 0 2px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(247, 135, 105, 0.12);
+  color: var(--global-theme-color);
+  cursor: pointer;
+  vertical-align: middle;
+  transition: background 0.15s, transform 0.1s;
+  font-size: 9px;
+
+  &:hover {
+    background: rgba(247, 135, 105, 0.22);
+  }
+  &:active {
+    transform: scale(0.92);
+  }
+  &.playing {
+    animation: pulse-play 0.8s ease-in-out infinite;
+  }
+}
+
+@keyframes pulse-play {
+  0%, 100% { background: rgba(247, 135, 105, 0.12); }
+  50% { background: rgba(247, 135, 105, 0.3); }
+}
