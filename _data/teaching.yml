@@ -17,7 +17,7 @@
       description:
         - "[DEN1101] Anatomy of Head and Neck"
 
-- title: Current PhD students
+- title: PhD students
   type: time_table
   contents:
     - title: Melissa Schorah 
@@ -35,7 +35,7 @@
       description:
         - "Topic - Mandarin fricative perception [funded by Iland Studentship]"
         - Supervised with Niamh Kelly and Rory Turnbull 
-- title: Current PhD students
+- title: Research Master students
   type: time_table
   contents:
     - title: Lucy Smith
