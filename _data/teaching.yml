@@ -34,7 +34,23 @@
       year: 2024 -
       description:
         - "Topic - Mandarin fricative perception [funded by Iland Studentship]"
-        - Supervised with Niamh Kelly and Rory Turnbull         
+        - Supervised with Niamh Kelly and Rory Turnbull 
+- title: Current PhD students
+  type: time_table
+  contents:
+    - title: Lucy Smith
+      year: 2025 - 2026
+      description:
+        - "Making Speech Technology More Inclusive: Understanding User Needs Across Different Populations [Best Dissertation Award]"
+    - title: Laura Henry
+      year: 2026 - 2027
+      description:
+        - "Topic - Time-of-day effect in ADHD"
+    - title: Iman Hamir
+      year: 2026 - 2027
+      description:
+        - "Topic - Text-to-Speech for Accessible Communication"
+
 - title: Past Teaching
   type: time_table
   contents:

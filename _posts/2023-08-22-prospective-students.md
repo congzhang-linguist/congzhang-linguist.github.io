@@ -12,15 +12,18 @@ description: Come and study with me
 ## Research areas
 I am interested in supervising PhD students who would like to work on:  
 
+- any topic related to **AI & healthcare***
+Speech is the new blood!
+
 - any topic related to **speech prosody**  
 For instance, production and/or perception of lexical tone/intonation in any language; tone-intonation interaction; syntax-prosody interface; non-native listening; L1 or L2 acquisition of prosody; prosody modelling; etc.  
 
 - theory-driven **speech technology** (TTS, ASR) research  
-I am interested using *small data* and to conduct *theory-driven* research on speech technology. The theory can be linguistic, mathematic, psycho- or neuro- linguistic. Or a combination. I have some ready topics and specific plans. If you have experience in building models for speech technology, you are very welcome to apply for a PhD. It is likely that funding will be available in the future.  
+I am interested using *small data* and to conduct *theory-driven* research on speech technology. The theory can be linguistic, mathematic, psycho- or neuro- linguistic. Or a combination. I have some ready topics and specific plans. If you have experience in building models for speech technology, you are very welcome to apply for a PhD. It is likely that funding will be available in the future. I am also interested in evaluating and improving speech technology uses in underrepresented populations, such as people with clinical conditions.
 
 
 ## Second supervisor
-In Newcastle, every PhD student is supervised by two supervisors. Depending on your background, you can find another supervisor to complement my knowledge and skills.
+In Newcastle, every PhD student is supervised by at least two supervisors. Depending on your background, you can find another supervisor to complement my knowledge and skills.
 
 #### If you have a language/linguistics background:
 There are three schools related to language/linguistic research:  
@@ -47,15 +50,15 @@ This is partically due to the (not very far) history, the majority of the lingui
 ## Funding
 The major funding sources for art, humanities, and social sciences are:
 - [North East Doctoral Training Centre studentship](https://www.ninedtp.ac.uk/)
-- [Northern Bridge Doctoral Training Centre studentships ](http://www.northernbridge.ac.uk/)
-- [IDEALAB](https://phd-idealab.com/#:~:text=IDEALAB%20The%20PhD%20Program%20International%20Doctorate%20for%20Experimental,and%20foundations%20of%20human%20language%20integrating%20interdisciplinary%20approaches.)  
+- [Northern Bridge Doctoral Training Centre studentships ](http://www.northernbridge.ac.uk/) [on hiatus]
+- [IDEALAB](https://phd-idealab.com/#:~:text=IDEALAB%20The%20PhD%20Program%20International%20Doctorate%20for%20Experimental,and%20foundations%20of%20human%20language%20integrating%20interdisciplinary%20approaches.)  [on hiatus]
 - [Stroke Association fellowships](https://www.stroke.org.uk/research/our-funding-schemes)   
 
 For more detailed information for the above four, see [here](https://www.ncl.ac.uk/ecls/study-with-us/postgraduate-research/phd-opportunities/).
 
 - [China Scholarship Council](http://apply.csc.edu.cn/) (for Chinese citizens only)
 - [Marie Curie](https://www.findaphd.com/guides/marie-sklodowska-curie-actions-msca-phd-funding)
-- [Newcastle University Overseas Research Scholarships](https://www.ncl.ac.uk/postgraduate/fees-funding/search-funding/?code=nuors24): This award covers the difference between home and overseas fee rates (value to be determined for 2024/25. 2023/24 value approximately £16,188 to £24,088 per annum (depending on tuition fee band)).
+- [Newcastle University Overseas Research Scholarships](https://www.ncl.ac.uk/postgraduate/fees-funding/search-funding/): This award covers the difference between home and overseas fee rates. The name changes every year, but you should be able to find something like this on the university website.
 
 Newcastle also have many opportunities for being a teaching assistant which can cover a large percentage of the cost.
 Newcastle, as a city, also has very low housing price and low living cost.
