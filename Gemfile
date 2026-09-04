@@ -20,7 +20,13 @@ group :jekyll_plugins do
 	gem 'kramdown-parser-gfm'
 	gem 'listen'
 	gem 'execjs'
-	gem 'therubyracer'
+end
+
+# Windows does not include the IANA timezone database, and listen may need
+# wdm for reliable file watching.
+platforms :mingw, :x64_mingw, :mswin, :jruby do
+    gem 'tzinfo-data'
+    gem 'wdm', '~> 0.2.0'
 end
 group :other_plugins do
     gem 'httparty'
