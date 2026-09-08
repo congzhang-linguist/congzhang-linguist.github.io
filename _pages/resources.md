@@ -557,16 +557,15 @@ nav_order: 6
   <div
     class="resource-card"
     data-type="package"
-    data-preview-image="https://raw.githubusercontent.com/congzhang365/rhythm.metrics/main/man/figures/logo.png"
+    data-preview-image="{{ '/assets/img/resources/rhythm-metrics-logo.png' | relative_url }}"
     data-preview-title="rhythm.metrics"
   >
     <div class="resource-header">
       <div class="resource-identity">
         <div class="resource-mark resource-logo-mark" aria-hidden="true">
-          <!-- Uses the published logo directly, it is shown here. The JS adds a fallback if it cannot load. -->
           <img
             class="resource-logo"
-            src="https://raw.githubusercontent.com/congzhang365/rhythm.metrics/main/man/figures/logo.png"
+            src="{{ '/assets/img/resources/rhythm-metrics-logo.png' | relative_url }}"
             alt=""
           >
         </div>
@@ -595,7 +594,7 @@ nav_order: 6
   <div
     class="resource-card"
     data-type="webapp"
-    data-preview-image="https://raw.githubusercontent.com/chenchenzi/citationtone_hub/main/inst/app/www/shinytone.svg"
+    data-preview-image="{{ '/assets/img/resources/shinytone-logo.png' | relative_url }}"
     data-preview-title="shinytone web app"
   >
     <div class="resource-header">
@@ -603,7 +602,7 @@ nav_order: 6
         <div class="resource-mark resource-logo-mark" aria-hidden="true">
           <img
             class="resource-logo"
-            src="https://raw.githubusercontent.com/chenchenzi/citationtone_hub/main/inst/app/www/shinytone.svg"
+            src="{{ '/assets/img/resources/shinytone-logo.png' | relative_url }}"
             alt=""
           >
         </div>
@@ -633,7 +632,7 @@ nav_order: 6
   <div
     class="resource-card"
     data-type="package"
-    data-preview-image="https://raw.githubusercontent.com/chenchenzi/citationtone_hub/main/man/figures/logo.png"
+    data-preview-image="{{ '/assets/img/resources/shinytone-r-logo.png' | relative_url }}"
     data-preview-title="shinytone R package"
   >
     <div class="resource-header">
@@ -641,7 +640,7 @@ nav_order: 6
         <div class="resource-mark resource-logo-mark" aria-hidden="true">
           <img
             class="resource-logo"
-            src="https://raw.githubusercontent.com/chenchenzi/citationtone_hub/main/man/figures/logo.png"
+            src="{{ '/assets/img/resources/shinytone-r-logo.png' | relative_url }}"
             alt=""
           >
         </div>
@@ -715,11 +714,20 @@ nav_order: 6
   </div>
 
   <!-- 6. IPA Flashcard -->
-  <div class="resource-card" data-type="webapp">
+  <div
+    class="resource-card"
+    data-type="webapp"
+    data-preview-image="{{ '/assets/img/resources/ipa-flashcard-logo.png' | relative_url }}"
+    data-preview-title="IPA365 Flashcard"
+  >
     <div class="resource-header">
       <div class="resource-identity">
-        <div class="resource-mark mark-webapp" aria-hidden="true">
-          <svg fill="none" stroke="currentColor"><use href="#icon-app"></use></svg>
+        <div class="resource-mark resource-logo-mark" aria-hidden="true">
+          <img
+            class="resource-logo"
+            src="{{ '/assets/img/resources/ipa-flashcard-logo.png' | relative_url }}"
+            alt=""
+          >
         </div>
         <div class="resource-heading">
           <div class="resource-title">
@@ -743,11 +751,20 @@ nav_order: 6
   </div>
 
   <!-- 7. IPA Keyboard -->
-  <div class="resource-card" data-type="webapp">
+  <div
+    class="resource-card"
+    data-type="webapp"
+    data-preview-image="{{ '/assets/img/resources/IPA365-keyboard-logo.png' | relative_url }}"
+    data-preview-title="IPA365 Keyboard"
+  >
     <div class="resource-header">
       <div class="resource-identity">
-        <div class="resource-mark mark-webapp" aria-hidden="true">
-          <svg fill="none" stroke="currentColor"><use href="#icon-keyboard"></use></svg>
+        <div class="resource-mark resource-logo-mark" aria-hidden="true">
+          <img
+            class="resource-logo"
+            src="{{ '/assets/img/resources/IPA365-keyboard-logo.png' | relative_url }}"
+            alt=""
+          >
         </div>
         <div class="resource-heading">
           <div class="resource-title">
@@ -770,9 +787,7 @@ nav_order: 6
     </div>
   </div>
 
-  <!-- 8. CharsiuG2P dictionaries
-       Fixed: this is now data-type="dataset", so the Dataset filter works correctly.
-  -->
+  <!-- 8. CharsiuG2P dictionaries  -->
   <div class="resource-card" data-type="dataset">
     <div class="resource-header">
       <div class="resource-identity">

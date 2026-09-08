@@ -10,3 +10,7 @@ Gemfile.lock
 vendor
 
 convert.cmd
+
+# Local Jekyll preview helpers
+preview.ps1
+Preview Website.cmd
