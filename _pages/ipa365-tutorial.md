@@ -76,7 +76,7 @@ nav: false
   .ipa-tutorial .chapter-gif {
     display: block;
     width: 100%;
-    max-width: 360px;
+    max-width: 520px;
     margin: 1rem auto 0;
     border-radius: 0.6rem;
     background: var(--global-bg-color);
