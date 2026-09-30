@@ -746,6 +746,9 @@ nav_order: 6
         <svg fill="none" stroke="currentColor"><use href="#icon-external"></use></svg>
         Open App
       </a>
+      <a class="resource-link" href="{{ '/resources/ipa365-tutorial/' | relative_url }}">
+        Tutorial
+      </a>
       <a class="resource-link" href="https://github.com/congzhang365/IPA_flashcard" target="_blank" rel="noopener">GitHub</a>
     </div>
   </div>
