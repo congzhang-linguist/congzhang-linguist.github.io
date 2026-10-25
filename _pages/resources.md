@@ -505,7 +505,7 @@ nav_order: 6
   </button>
 </div>
 
-<div class="count-label"><span id="resource-count">15</span> resources</div>
+<div class="count-label"><span id="resource-count">17</span> resources</div>
 
 <div class="resources-grid" id="resources-grid">
 
@@ -713,7 +713,76 @@ nav_order: 6
     </div>
   </div>
 
-  <!-- 6. IPA Flashcard -->
+  <!-- 6. IPA Labels Python package -->
+  <div
+    class="resource-card"
+    data-type="package"
+    data-preview-image="{{ '/assets/img/resources/ipa-labels-logo.png' | relative_url }}"
+    data-preview-title="ipa-labels Python package"
+  >
+    <div class="resource-header">
+      <div class="resource-identity">
+        <div class="resource-mark resource-logo-mark" aria-hidden="true">
+          <img
+            class="resource-logo"
+            src="{{ '/assets/img/resources/ipa-labels-logo.png' | relative_url }}"
+            alt=""
+          >
+        </div>
+        <div class="resource-heading">
+          <div class="resource-title">
+            <a href="https://github.com/congzhang365/IPA_labels" target="_blank" rel="noopener">ipa-labels Python package</a>
+          </div>
+          <div class="resource-meta">Cong Zhang · 2026 · Python package</div>
+        </div>
+      </div>
+      <span class="resource-badge badge-package">Package</span>
+    </div>
+    <div class="resource-description">
+      Python toolkit for exploring IPA symbols, Unicode and transcription codes, articulatory labels, PHOIBLE features and language-specific phoneme inventories.
+    </div>
+    <div class="resource-links">
+      <a class="resource-link" href="https://congzhang365.github.io/IPA_labels/docs/python/" target="_blank" rel="noopener">Python Manual</a>
+      <a class="resource-link" href="https://github.com/congzhang365/IPA_labels/blob/main/python_package/TUTORIAL.md" target="_blank" rel="noopener">Tutorial</a>
+      <a class="resource-link" href="https://github.com/congzhang365/IPA_labels" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+
+  <!-- 7. IPA Labels R package -->
+  <div
+    class="resource-card"
+    data-type="package"
+    data-preview-image="{{ '/assets/img/resources/ipa-labels-r-logo.png' | relative_url }}"
+    data-preview-title="ipa.labels R package"
+  >
+    <div class="resource-header">
+      <div class="resource-identity">
+        <div class="resource-mark resource-logo-mark" aria-hidden="true">
+          <img
+            class="resource-logo"
+            src="{{ '/assets/img/resources/ipa-labels-r-logo.png' | relative_url }}"
+            alt=""
+          >
+        </div>
+        <div class="resource-heading">
+          <div class="resource-title">
+            <a href="https://github.com/congzhang365/IPA_labels" target="_blank" rel="noopener">ipa.labels R package</a>
+          </div>
+          <div class="resource-meta">Cong Zhang · 2026 · R package</div>
+        </div>
+      </div>
+      <span class="resource-badge badge-package">Package</span>
+    </div>
+    <div class="resource-description">
+      R-based phonetic database and lookup utility for IPA symbols, transcription codes, articulatory labels, PHOIBLE features and language-specific phoneme inventories.
+    </div>
+    <div class="resource-links">
+      <a class="resource-link" href="https://congzhang365.github.io/IPA_labels/docs/r/" target="_blank" rel="noopener">R Manual</a>
+      <a class="resource-link" href="https://github.com/congzhang365/IPA_labels" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+
+  <!-- 8. IPA Flashcard -->
   <div
     class="resource-card"
     data-type="webapp"
@@ -949,8 +1018,21 @@ nav_order: 6
   document.addEventListener('DOMContentLoaded', function () {
     /* ---------- Filter functionality ---------- */
     const filterButtons = document.querySelectorAll('.filter-btn');
-    const cards = document.querySelectorAll('.resource-card');
+    const grid = document.getElementById('resources-grid');
+    const cards = Array.from(document.querySelectorAll('.resource-card'));
     const countSpan = document.getElementById('resource-count');
+
+    /* Keep the newest resources at the top. Cards without a year stay at the end. */
+    if (grid) {
+      cards
+        .map((card, index) => ({
+          card,
+          index,
+          year: Number(card.querySelector('.resource-meta')?.textContent.match(/\b(20\d{2})\b/)?.[1] || 0)
+        }))
+        .sort((a, b) => b.year - a.year || a.index - b.index)
+        .forEach(({ card }) => grid.appendChild(card));
+    }
 
     function updateFilter() {
       const activeButton = document.querySelector('.filter-btn.active');
